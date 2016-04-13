@@ -1,0 +1,7 @@
+AgentInterface.java    -- getID() method
+AgentCanvas.java       -- draw the agent's ID number (centered on agent)
+SimulationManager.java -- added maxTime instance var, getMaxTime() method, 
+                          additional max time argument to constructor
+AgentGUI.java          -- code to construct and display time series dialog
+TimeSeriesDialog.java  -- new
+DialogCanvas.java      -- new

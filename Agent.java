@@ -12,8 +12,8 @@ public class Agent implements AgentInterface
     private static final int NUM_NEIGHBORS = 8;//Moore neighborhood
     public static final double MAC_SPEED = 2; //Mac moves every 2 seconds, on average
     public static final double BAC_SPEED = 1; //Bac moves every 1 sec, on avg
-    public static final double DIV_SCALE = 2; //Bac divides every 10 sec, on avg. 10 = SHAPE*SCALE
-    public static final int DIV_SHAPE = 5; //Bac div ~Gamma(shape=5,scale = 2)
+    public static final double DIV_SCALE = 1; //Bac divides every 10 sec, on avg. 10 = SHAPE*SCALE
+    public static final int DIV_SHAPE = 2; //Bac div ~Gamma(shape=5,scale = 2)
 
     //the next-event calendar
     private double time_move;
