@@ -14,6 +14,7 @@ public class Simulation extends SimulationManager
     // you may choose to have two separate lists, or only one list of all
     private ArrayList<Agent> macrophageList;
     private ArrayList<Agent> bacteriaList;
+    private double sim_clock;
     private int numCells;
     private int guiCellWidth;
     private Random rng;
@@ -34,6 +35,7 @@ public class Simulation extends SimulationManager
         // construct and store an AgentGUI object for drawing
         super(numCells, guiCellWidth, maxTime);
 
+        sim_clock = 0;
         this.numCells = numCells;
         this.guiCellWidth = guiCellWidth;
         this.maxTime = maxTime;
@@ -78,7 +80,6 @@ public class Simulation extends SimulationManager
     {
         this.gui = new AgentGUI(this, numCells, guiCellWidth);
 
-        double sim_clock = 0;
         Event nextEv = new Event(null, Double.MAX_VALUE, Event.EventType.UNDEF);
         for( Agent m : macrophageList ){
                 System.out.printf("Macro at (%d, %d) has ev_type %s at time %f%n",m.getRow(),m.getCol(),m.getNextEvent().name(),m.getNextTime());
@@ -131,6 +132,7 @@ public class Simulation extends SimulationManager
             sim_clock = nextEv.time;
 
             gui.update(guiDelay);
+            System.out.println("Simulation: I'm updating the GUI!");
         }
     }
 
@@ -150,7 +152,7 @@ public class Simulation extends SimulationManager
      * Accessor method that returns the current time of the simulation clock.
      * @return a double representing the current time in simulated time
      **************************************************************************/
-    public double getTime()        { return(time); }
+    public double getTime()        { return(sim_clock); }
 
     /**************************************************************************
      * Accessor method that returns the end time of the simulation.

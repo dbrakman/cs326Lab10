@@ -64,10 +64,12 @@ class AgentGUI extends WindowManager
 
         // and update the time series dialog -- only on integer time steps
         double t = simulation.getTime();
+        System.out.printf("AgentGUI: t=%.2f, lastUpdateTime = %d%n",t,lastUpdateTime);
         if ((int)t > lastUpdateTime)
         {
             this.dialog.updateCounts(simulation.getNumMacrophages(), 
                                      simulation.getNumBacteria());
+            System.out.println("AgentGUI: ololol updating the dialoglog");
             lastUpdateTime++;
         }
     }
