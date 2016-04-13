@@ -1,0 +1,1834 @@
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (7,2) has ev_type MOVE at time 0.033403
+Bac at (2,7) has ev_type MOVE at time 0.123394
+Bac at (1,1) has ev_type MOVE at time 0.083204
+Bac at (1,2) has ev_type MOVE at time 0.134616
+Bac at (4,6) has ev_type MOVE at time 0.144629
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (7,2) BACTERIUM's MOVE at time 0.033403
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (6,1)
+Looking at cell (6,2)
+Looking at cell (6,3)
+Looking at cell (7,1)
+Looking at cell (7,3)
+Looking at cell (8,1)
+Looking at cell (8,2)
+Looking at cell (8,3)
+We're moving to (6,3)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (2,7) has ev_type MOVE at time 0.123394
+Bac at (1,1) has ev_type MOVE at time 0.083204
+Bac at (1,2) has ev_type MOVE at time 0.134616
+Bac at (4,6) has ev_type MOVE at time 0.144629
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (1,1) BACTERIUM's MOVE at time 0.083204
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (0,0)
+Looking at cell (0,1)
+Looking at cell (0,2)
+Looking at cell (1,0)
+Looking at cell (1,2)
+We found a bac there
+Looking at cell (2,0)
+Looking at cell (2,1)
+Looking at cell (2,2)
+We're moving to (0,0)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (2,7) has ev_type MOVE at time 0.123394
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (1,2) has ev_type MOVE at time 0.134616
+Bac at (4,6) has ev_type MOVE at time 0.144629
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (2,7) BACTERIUM's MOVE at time 0.123394
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (1,6)
+Looking at cell (1,7)
+Looking at cell (1,8)
+Looking at cell (2,6)
+Looking at cell (2,8)
+Looking at cell (3,6)
+Looking at cell (3,7)
+Looking at cell (3,8)
+We're moving to (3,7)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (1,2) has ev_type MOVE at time 0.134616
+Bac at (4,6) has ev_type MOVE at time 0.144629
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (1,2) BACTERIUM's MOVE at time 0.134616
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (0,1)
+Looking at cell (0,2)
+Looking at cell (0,3)
+Looking at cell (1,1)
+Looking at cell (1,3)
+Looking at cell (2,1)
+Looking at cell (2,2)
+Looking at cell (2,3)
+We're moving to (2,1)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (2,1) has ev_type MOVE at time 0.242701
+Bac at (4,6) has ev_type MOVE at time 0.144629
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (4,6) BACTERIUM's MOVE at time 0.144629
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,5)
+Looking at cell (3,6)
+Looking at cell (3,7)
+We found a bac there
+Looking at cell (4,5)
+Looking at cell (4,7)
+Looking at cell (5,5)
+We found a bac there
+Looking at cell (5,6)
+Looking at cell (5,7)
+We're moving to (5,7)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (2,1) has ev_type MOVE at time 0.242701
+Bac at (5,7) has ev_type MOVE at time 0.197148
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (5,7) BACTERIUM's MOVE at time 0.197148
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,6)
+Looking at cell (4,7)
+Looking at cell (4,8)
+Looking at cell (5,6)
+Looking at cell (5,8)
+Looking at cell (6,6)
+Looking at cell (6,7)
+Looking at cell (6,8)
+We're moving to (4,6)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (2,1) has ev_type MOVE at time 0.242701
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (2,1) BACTERIUM's MOVE at time 0.242701
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (1,0)
+Looking at cell (1,1)
+Looking at cell (1,2)
+Looking at cell (2,0)
+Looking at cell (2,2)
+Looking at cell (3,0)
+Looking at cell (3,1)
+Looking at cell (3,2)
+We're moving to (2,0)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (2,0) has ev_type MOVE at time 0.354997
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (2,0) BACTERIUM's MOVE at time 0.354997
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (1,9)
+Looking at cell (1,0)
+Looking at cell (1,1)
+Looking at cell (2,9)
+Looking at cell (2,1)
+Looking at cell (3,9)
+Looking at cell (3,0)
+Looking at cell (3,1)
+We're moving to (3,0)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (5,5) has ev_type MOVE at time 0.497437
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (5,5) BACTERIUM's MOVE at time 0.497437
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,4)
+Looking at cell (4,5)
+Looking at cell (4,6)
+We found a bac there
+Looking at cell (5,4)
+Looking at cell (5,6)
+Looking at cell (6,4)
+Looking at cell (6,5)
+Looking at cell (6,6)
+We're moving to (6,5)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (5, 4) has ev_type MOVE at time 0.516413
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (5,4) MACROPHAGE's MOVE at time 0.516413
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (4,3)
+Looking at cell (4,4)
+Looking at cell (4,5)
+Looking at cell (5,3)
+Looking at cell (5,5)
+Looking at cell (6,3)
+We found a bac there
+Looking at cell (6,4)
+Looking at cell (6,5)
+We found a bac there
+We're moving to (6,3)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (6, 3) has ev_type EAT at time 0.516413
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (6,3) has ev_type MOVE at time 0.933829
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (6,3) MACROPHAGE's EAT at time 0.516413
+Let's see what's next
+A bac should've just been deleted
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (6, 3) has ev_type MOVE at time 0.577794
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (6,3) MACROPHAGE's MOVE at time 0.577794
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (5,2)
+Looking at cell (5,3)
+Looking at cell (5,4)
+Looking at cell (6,2)
+Looking at cell (6,4)
+Looking at cell (7,2)
+Looking at cell (7,3)
+Looking at cell (7,4)
+We're moving to (7,3)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (7, 3) has ev_type MOVE at time 0.910538
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (8,8) has ev_type MOVE at time 0.580069
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (8,8) BACTERIUM's MOVE at time 0.580069
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (7,7)
+Looking at cell (7,8)
+Looking at cell (7,9)
+We found a bac there
+Looking at cell (8,7)
+Looking at cell (8,9)
+Looking at cell (9,7)
+Looking at cell (9,8)
+Looking at cell (9,9)
+We're moving to (7,8)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (3, 5) has ev_type MOVE at time 0.644097
+Macro at (7, 3) has ev_type MOVE at time 0.910538
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (7,8) has ev_type MOVE at time 0.737899
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (3,5) MACROPHAGE's MOVE at time 0.644097
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (2,4)
+Looking at cell (2,5)
+Looking at cell (2,6)
+Looking at cell (3,4)
+Looking at cell (3,6)
+Looking at cell (4,4)
+Looking at cell (4,5)
+Looking at cell (4,6)
+We found a bac there
+We're moving to (4,6)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type EAT at time 0.644097
+Macro at (7, 3) has ev_type MOVE at time 0.910538
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (7,8) has ev_type MOVE at time 0.737899
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (4,6) has ev_type MOVE at time 1.066795
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (4,6) MACROPHAGE's EAT at time 0.644097
+Let's see what's next
+A bac should've just been deleted
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (7, 3) has ev_type MOVE at time 0.910538
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (7,8) has ev_type MOVE at time 0.737899
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (0,0) has ev_type MOVE at time 0.705858
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (0,0) BACTERIUM's MOVE at time 0.705858
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (9,9)
+Looking at cell (9,0)
+Looking at cell (9,1)
+Looking at cell (0,9)
+Looking at cell (0,1)
+Looking at cell (1,9)
+Looking at cell (1,0)
+Looking at cell (1,1)
+We're moving to (1,9)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (7, 3) has ev_type MOVE at time 0.910538
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (7,8) has ev_type MOVE at time 0.737899
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (1,9) has ev_type MOVE at time 1.416041
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (7,8) BACTERIUM's MOVE at time 0.737899
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (6,7)
+Looking at cell (6,8)
+Looking at cell (6,9)
+Looking at cell (7,7)
+Looking at cell (7,9)
+We found a bac there
+Looking at cell (8,7)
+Looking at cell (8,8)
+Looking at cell (8,9)
+We're moving to (6,9)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (7, 3) has ev_type MOVE at time 0.910538
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (1,9) has ev_type MOVE at time 1.416041
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (7,3) MACROPHAGE's MOVE at time 0.910538
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,2)
+Looking at cell (6,3)
+Looking at cell (6,4)
+Looking at cell (7,2)
+Looking at cell (7,4)
+Looking at cell (8,2)
+Looking at cell (8,3)
+Looking at cell (8,4)
+We're moving to (6,4)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 4) has ev_type MOVE at time 1.136642
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,7) has ev_type MOVE at time 1.058615
+Bac at (1,9) has ev_type MOVE at time 1.416041
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (3,7) BACTERIUM's MOVE at time 1.058615
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (2,6)
+Looking at cell (2,7)
+Looking at cell (2,8)
+Looking at cell (3,6)
+Looking at cell (3,8)
+Looking at cell (4,6)
+Looking at cell (4,7)
+Looking at cell (4,8)
+We're moving to (3,8)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 4) has ev_type MOVE at time 1.136642
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (1,9) has ev_type MOVE at time 1.416041
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (6,4) MACROPHAGE's MOVE at time 1.136642
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (5,3)
+Looking at cell (5,4)
+Looking at cell (5,5)
+Looking at cell (6,3)
+Looking at cell (6,5)
+We found a bac there
+Looking at cell (7,3)
+Looking at cell (7,4)
+Looking at cell (7,5)
+We're moving to (6,5)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type EAT at time 1.136642
+Bac at (6,5) has ev_type MOVE at time 2.171313
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (1,9) has ev_type MOVE at time 1.416041
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (6,5) MACROPHAGE's EAT at time 1.136642
+Let's see what's next
+A bac should've just been deleted
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (1,9) has ev_type MOVE at time 1.416041
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (1,9) BACTERIUM's MOVE at time 1.416041
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (0,8)
+Looking at cell (0,9)
+Looking at cell (0,0)
+Looking at cell (1,8)
+Looking at cell (1,0)
+Looking at cell (2,8)
+Looking at cell (2,9)
+Looking at cell (2,0)
+We're moving to (2,0)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,0) has ev_type MOVE at time 1.884475
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (2,0) BACTERIUM's MOVE at time 1.884475
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (1,9)
+Looking at cell (1,0)
+Looking at cell (1,1)
+Looking at cell (2,9)
+Looking at cell (2,1)
+Looking at cell (3,9)
+Looking at cell (3,0)
+We found a bac there
+Looking at cell (3,1)
+We're moving to (2,9)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,9) has ev_type MOVE at time 1.998161
+Bac at (3,0) has ev_type MOVE at time 1.970102
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (3,0) BACTERIUM's MOVE at time 1.970102
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (2,9)
+We found a bac there
+Looking at cell (2,0)
+Looking at cell (2,1)
+Looking at cell (3,9)
+Looking at cell (3,1)
+Looking at cell (4,9)
+Looking at cell (4,0)
+Looking at cell (4,1)
+We're moving to (3,1)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,9) has ev_type MOVE at time 1.998161
+Bac at (3,1) has ev_type MOVE at time 2.283602
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (2,9) BACTERIUM's MOVE at time 1.998161
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (1,8)
+Looking at cell (1,9)
+Looking at cell (1,0)
+Looking at cell (2,8)
+Looking at cell (2,0)
+Looking at cell (3,8)
+We found a bac there
+Looking at cell (3,9)
+Looking at cell (3,0)
+We're moving to (2,8)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,8) has ev_type MOVE at time 2.848563
+Bac at (3,1) has ev_type MOVE at time 2.283602
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (3,1) BACTERIUM's MOVE at time 2.283602
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (2,0)
+Looking at cell (2,1)
+Looking at cell (2,2)
+Looking at cell (3,0)
+Looking at cell (3,2)
+Looking at cell (4,0)
+Looking at cell (4,1)
+Looking at cell (4,2)
+We're moving to (2,1)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (6,9) has ev_type MOVE at time 2.321121
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,8) has ev_type MOVE at time 2.848563
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (6,9) BACTERIUM's MOVE at time 2.321121
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (5,8)
+Looking at cell (5,9)
+Looking at cell (5,0)
+Looking at cell (6,8)
+Looking at cell (6,0)
+Looking at cell (7,8)
+Looking at cell (7,9)
+We found a bac there
+Looking at cell (7,0)
+We're moving to (7,0)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 6) has ev_type MOVE at time 2.350868
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,8) has ev_type MOVE at time 2.848563
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (4,6) MACROPHAGE's MOVE at time 2.350868
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (3,5)
+Looking at cell (3,6)
+Looking at cell (3,7)
+Looking at cell (4,5)
+Looking at cell (4,7)
+Looking at cell (5,5)
+Looking at cell (5,6)
+Looking at cell (5,7)
+We're moving to (4,5)
+Macro at (4, 8) has ev_type MOVE at time 2.432260
+Macro at (4, 5) has ev_type MOVE at time 2.864322
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,8) has ev_type MOVE at time 2.848563
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (4,8) MACROPHAGE's MOVE at time 2.432260
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (3,7)
+Looking at cell (3,8)
+We found a bac there
+Looking at cell (3,9)
+Looking at cell (4,7)
+Looking at cell (4,9)
+Looking at cell (5,7)
+Looking at cell (5,8)
+Looking at cell (5,9)
+We're moving to (3,8)
+Macro at (3, 8) has ev_type EAT at time 2.432260
+Macro at (4, 5) has ev_type MOVE at time 2.864322
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,8) has ev_type MOVE at time 6.346548
+Bac at (2,8) has ev_type MOVE at time 2.848563
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (3,8) MACROPHAGE's EAT at time 2.432260
+Let's see what's next
+A bac should've just been deleted
+Macro at (3, 8) has ev_type MOVE at time 2.573830
+Macro at (4, 5) has ev_type MOVE at time 2.864322
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (2,8) has ev_type MOVE at time 2.848563
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (3,8) MACROPHAGE's MOVE at time 2.573830
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (2,7)
+Looking at cell (2,8)
+We found a bac there
+Looking at cell (2,9)
+Looking at cell (3,7)
+Looking at cell (3,9)
+Looking at cell (4,7)
+Looking at cell (4,8)
+Looking at cell (4,9)
+We're moving to (2,8)
+Macro at (2, 8) has ev_type EAT at time 2.573830
+Macro at (4, 5) has ev_type MOVE at time 2.864322
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (2,8) has ev_type MOVE at time 2.848563
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (2,8) MACROPHAGE's EAT at time 2.573830
+Let's see what's next
+A bac should've just been deleted
+Macro at (2, 8) has ev_type MOVE at time 3.356602
+Macro at (4, 5) has ev_type MOVE at time 2.864322
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (4,5) MACROPHAGE's MOVE at time 2.864322
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (3,4)
+Looking at cell (3,5)
+Looking at cell (3,6)
+Looking at cell (4,4)
+Looking at cell (4,6)
+Looking at cell (5,4)
+Looking at cell (5,5)
+Looking at cell (5,6)
+We're moving to (5,5)
+Macro at (2, 8) has ev_type MOVE at time 3.356602
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (7,9) has ev_type MOVE at time 3.080144
+So the next event is a (7,9) BACTERIUM's MOVE at time 3.080144
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (6,8)
+Looking at cell (6,9)
+Looking at cell (6,0)
+Looking at cell (7,8)
+Looking at cell (7,0)
+We found a bac there
+Looking at cell (8,8)
+Looking at cell (8,9)
+Looking at cell (8,0)
+We're moving to (6,8)
+Macro at (2, 8) has ev_type MOVE at time 3.356602
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (6,8) has ev_type MOVE at time 3.143323
+So the next event is a (6,8) BACTERIUM's MOVE at time 3.143323
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (5,7)
+Looking at cell (5,8)
+Looking at cell (5,9)
+Looking at cell (6,7)
+Looking at cell (6,9)
+Looking at cell (7,7)
+Looking at cell (7,8)
+Looking at cell (7,9)
+We're moving to (6,9)
+Macro at (2, 8) has ev_type MOVE at time 3.356602
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (2,1) has ev_type MOVE at time 3.147136
+Bac at (6,9) has ev_type MOVE at time 3.330310
+So the next event is a (2,1) BACTERIUM's MOVE at time 3.147136
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (1,0)
+Looking at cell (1,1)
+Looking at cell (1,2)
+Looking at cell (2,0)
+Looking at cell (2,2)
+Looking at cell (3,0)
+Looking at cell (3,1)
+Looking at cell (3,2)
+We're moving to (3,0)
+Macro at (2, 8) has ev_type MOVE at time 3.356602
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,0) has ev_type MOVE at time 3.904759
+Bac at (6,9) has ev_type MOVE at time 3.330310
+So the next event is a (6,9) BACTERIUM's MOVE at time 3.330310
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (5,8)
+Looking at cell (5,9)
+Looking at cell (5,0)
+Looking at cell (6,8)
+Looking at cell (6,0)
+Looking at cell (7,8)
+Looking at cell (7,9)
+Looking at cell (7,0)
+We found a bac there
+We're moving to (5,0)
+Macro at (2, 8) has ev_type MOVE at time 3.356602
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,0) has ev_type MOVE at time 3.904759
+Bac at (5,0) has ev_type MOVE at time 3.458054
+So the next event is a (2,8) MACROPHAGE's MOVE at time 3.356602
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (1,7)
+Looking at cell (1,8)
+Looking at cell (1,9)
+Looking at cell (2,7)
+Looking at cell (2,9)
+Looking at cell (3,7)
+Looking at cell (3,8)
+Looking at cell (3,9)
+We're moving to (1,9)
+Macro at (1, 9) has ev_type MOVE at time 3.774370
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,0) has ev_type MOVE at time 3.904759
+Bac at (5,0) has ev_type MOVE at time 3.458054
+So the next event is a (5,0) BACTERIUM's MOVE at time 3.458054
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,9)
+Looking at cell (4,0)
+Looking at cell (4,1)
+Looking at cell (5,9)
+Looking at cell (5,1)
+Looking at cell (6,9)
+Looking at cell (6,0)
+Looking at cell (6,1)
+We're moving to (6,0)
+Macro at (1, 9) has ev_type MOVE at time 3.774370
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,0) has ev_type MOVE at time 3.904759
+Bac at (6,0) has ev_type MOVE at time 4.090417
+So the next event is a (1,9) MACROPHAGE's MOVE at time 3.774370
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (0,8)
+Looking at cell (0,9)
+Looking at cell (0,0)
+Looking at cell (1,8)
+Looking at cell (1,0)
+Looking at cell (2,8)
+Looking at cell (2,9)
+Looking at cell (2,0)
+We're moving to (2,8)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (3,0) has ev_type MOVE at time 3.904759
+Bac at (6,0) has ev_type MOVE at time 4.090417
+So the next event is a (3,0) BACTERIUM's MOVE at time 3.904759
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (2,9)
+Looking at cell (2,0)
+Looking at cell (2,1)
+Looking at cell (3,9)
+Looking at cell (3,1)
+Looking at cell (4,9)
+Looking at cell (4,0)
+Looking at cell (4,1)
+We're moving to (4,1)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (7,0) has ev_type MOVE at time 3.963200
+Bac at (4,1) has ev_type MOVE at time 4.183825
+Bac at (6,0) has ev_type MOVE at time 4.090417
+So the next event is a (7,0) BACTERIUM's MOVE at time 3.963200
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (6,9)
+Looking at cell (6,0)
+We found a bac there
+Looking at cell (6,1)
+Looking at cell (7,9)
+Looking at cell (7,1)
+Looking at cell (8,9)
+Looking at cell (8,0)
+Looking at cell (8,1)
+We're moving to (6,1)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (6, 5) has ev_type MOVE at time 4.002674
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,1) has ev_type MOVE at time 4.183825
+Bac at (6,0) has ev_type MOVE at time 4.090417
+So the next event is a (6,5) MACROPHAGE's MOVE at time 4.002674
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (5,4)
+Looking at cell (5,5)
+We found a mac there
+Looking at cell (5,6)
+Looking at cell (6,4)
+Looking at cell (6,6)
+Looking at cell (7,4)
+Looking at cell (7,5)
+Looking at cell (7,6)
+We're moving to (7,5)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (7, 5) has ev_type MOVE at time 4.598507
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,1) has ev_type MOVE at time 4.183825
+Bac at (6,0) has ev_type MOVE at time 4.090417
+So the next event is a (6,0) BACTERIUM's MOVE at time 4.090417
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (5,9)
+Looking at cell (5,0)
+Looking at cell (5,1)
+Looking at cell (6,9)
+Looking at cell (6,1)
+We found a bac there
+Looking at cell (7,9)
+Looking at cell (7,0)
+Looking at cell (7,1)
+We're moving to (7,1)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (7, 5) has ev_type MOVE at time 4.598507
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,1) has ev_type MOVE at time 4.183825
+Bac at (7,1) has ev_type MOVE at time 4.547868
+So the next event is a (4,1) BACTERIUM's MOVE at time 4.183825
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,0)
+Looking at cell (3,1)
+Looking at cell (3,2)
+Looking at cell (4,0)
+Looking at cell (4,2)
+Looking at cell (5,0)
+Looking at cell (5,1)
+Looking at cell (5,2)
+We're moving to (4,0)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (7, 5) has ev_type MOVE at time 4.598507
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,0) has ev_type MOVE at time 4.188141
+Bac at (7,1) has ev_type MOVE at time 4.547868
+So the next event is a (4,0) BACTERIUM's MOVE at time 4.188141
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,9)
+Looking at cell (3,0)
+Looking at cell (3,1)
+Looking at cell (4,9)
+Looking at cell (4,1)
+Looking at cell (5,9)
+Looking at cell (5,0)
+Looking at cell (5,1)
+We're moving to (4,9)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (7, 5) has ev_type MOVE at time 4.598507
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+Bac at (7,1) has ev_type MOVE at time 4.547868
+So the next event is a (7,1) BACTERIUM's MOVE at time 4.547868
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (6,0)
+Looking at cell (6,1)
+We found a bac there
+Looking at cell (6,2)
+Looking at cell (7,0)
+Looking at cell (7,2)
+Looking at cell (8,0)
+Looking at cell (8,1)
+Looking at cell (8,2)
+We're moving to (8,2)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (7, 5) has ev_type MOVE at time 4.598507
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+Bac at (8,2) has ev_type MOVE at time 5.056151
+So the next event is a (7,5) MACROPHAGE's MOVE at time 4.598507
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,4)
+Looking at cell (6,5)
+Looking at cell (6,6)
+Looking at cell (7,4)
+Looking at cell (7,6)
+Looking at cell (8,4)
+Looking at cell (8,5)
+Looking at cell (8,6)
+We're moving to (7,4)
+Macro at (2, 8) has ev_type MOVE at time 4.612905
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (7, 4) has ev_type MOVE at time 5.401018
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+Bac at (8,2) has ev_type MOVE at time 5.056151
+So the next event is a (2,8) MACROPHAGE's MOVE at time 4.612905
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (1,7)
+Looking at cell (1,8)
+Looking at cell (1,9)
+Looking at cell (2,7)
+Looking at cell (2,9)
+Looking at cell (3,7)
+Looking at cell (3,8)
+Looking at cell (3,9)
+We're moving to (2,7)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (5, 5) has ev_type MOVE at time 5.028639
+Macro at (7, 4) has ev_type MOVE at time 5.401018
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+Bac at (8,2) has ev_type MOVE at time 5.056151
+So the next event is a (5,5) MACROPHAGE's MOVE at time 5.028639
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (4,4)
+Looking at cell (4,5)
+Looking at cell (4,6)
+Looking at cell (5,4)
+Looking at cell (5,6)
+Looking at cell (6,4)
+Looking at cell (6,5)
+Looking at cell (6,6)
+We're moving to (6,4)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 4) has ev_type MOVE at time 5.182866
+Macro at (7, 4) has ev_type MOVE at time 5.401018
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+Bac at (8,2) has ev_type MOVE at time 5.056151
+So the next event is a (8,2) BACTERIUM's MOVE at time 5.056151
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (7,1)
+Looking at cell (7,2)
+Looking at cell (7,3)
+Looking at cell (8,1)
+Looking at cell (8,3)
+Looking at cell (9,1)
+Looking at cell (9,2)
+Looking at cell (9,3)
+We're moving to (7,3)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 4) has ev_type MOVE at time 5.182866
+Macro at (7, 4) has ev_type MOVE at time 5.401018
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+Bac at (7,3) has ev_type MOVE at time 6.040946
+So the next event is a (6,4) MACROPHAGE's MOVE at time 5.182866
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (5,3)
+Looking at cell (5,4)
+Looking at cell (5,5)
+Looking at cell (6,3)
+Looking at cell (6,5)
+Looking at cell (7,3)
+We found a bac there
+Looking at cell (7,4)
+We found a mac there
+Looking at cell (7,5)
+We're moving to (7,3)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (7, 3) has ev_type EAT at time 5.182866
+Macro at (7, 4) has ev_type MOVE at time 5.401018
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+Bac at (7,3) has ev_type MOVE at time 6.040946
+So the next event is a (7,3) MACROPHAGE's EAT at time 5.182866
+Let's see what's next
+A bac should've just been deleted
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (7, 3) has ev_type MOVE at time 5.182919
+Macro at (7, 4) has ev_type MOVE at time 5.401018
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+So the next event is a (7,3) MACROPHAGE's MOVE at time 5.182919
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,2)
+Looking at cell (6,3)
+Looking at cell (6,4)
+Looking at cell (7,2)
+Looking at cell (7,4)
+We found a mac there
+Looking at cell (8,2)
+Looking at cell (8,3)
+Looking at cell (8,4)
+We're moving to (8,3)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (8, 3) has ev_type MOVE at time 6.861409
+Macro at (7, 4) has ev_type MOVE at time 5.401018
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+So the next event is a (7,4) MACROPHAGE's MOVE at time 5.401018
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,3)
+Looking at cell (6,4)
+Looking at cell (6,5)
+Looking at cell (7,3)
+Looking at cell (7,5)
+Looking at cell (8,3)
+We found a mac there
+Looking at cell (8,4)
+Looking at cell (8,5)
+We're moving to (8,4)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (8, 3) has ev_type MOVE at time 6.861409
+Macro at (8, 4) has ev_type MOVE at time 6.732109
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (4,9) has ev_type MOVE at time 6.650148
+So the next event is a (4,9) BACTERIUM's MOVE at time 6.650148
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,8)
+Looking at cell (3,9)
+Looking at cell (3,0)
+Looking at cell (4,8)
+Looking at cell (4,0)
+Looking at cell (5,8)
+Looking at cell (5,9)
+Looking at cell (5,0)
+We're moving to (5,9)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (8, 3) has ev_type MOVE at time 6.861409
+Macro at (8, 4) has ev_type MOVE at time 6.732109
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (5,9) has ev_type MOVE at time 6.851493
+So the next event is a (8,4) MACROPHAGE's MOVE at time 6.732109
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (7,3)
+Looking at cell (7,4)
+Looking at cell (7,5)
+Looking at cell (8,3)
+We found a mac there
+Looking at cell (8,5)
+Looking at cell (9,3)
+Looking at cell (9,4)
+Looking at cell (9,5)
+We're moving to (7,3)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (8, 3) has ev_type MOVE at time 6.861409
+Macro at (7, 3) has ev_type MOVE at time 7.813990
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (5,9) has ev_type MOVE at time 6.851493
+So the next event is a (5,9) BACTERIUM's MOVE at time 6.851493
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,8)
+Looking at cell (4,9)
+Looking at cell (4,0)
+Looking at cell (5,8)
+Looking at cell (5,0)
+Looking at cell (6,8)
+Looking at cell (6,9)
+Looking at cell (6,0)
+We're moving to (6,0)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (8, 3) has ev_type MOVE at time 6.861409
+Macro at (7, 3) has ev_type MOVE at time 7.813990
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (8,3) MACROPHAGE's MOVE at time 6.861409
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (7,2)
+Looking at cell (7,3)
+We found a mac there
+Looking at cell (7,4)
+Looking at cell (8,2)
+Looking at cell (8,4)
+Looking at cell (9,2)
+Looking at cell (9,3)
+Looking at cell (9,4)
+We're moving to (7,4)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (7, 4) has ev_type MOVE at time 6.863678
+Macro at (7, 3) has ev_type MOVE at time 7.813990
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (7,4) MACROPHAGE's MOVE at time 6.863678
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,3)
+Looking at cell (6,4)
+Looking at cell (6,5)
+Looking at cell (7,3)
+We found a mac there
+Looking at cell (7,5)
+Looking at cell (8,3)
+Looking at cell (8,4)
+Looking at cell (8,5)
+We're moving to (7,5)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (7, 5) has ev_type MOVE at time 7.229684
+Macro at (7, 3) has ev_type MOVE at time 7.813990
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (7,5) MACROPHAGE's MOVE at time 7.229684
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,4)
+Looking at cell (6,5)
+Looking at cell (6,6)
+Looking at cell (7,4)
+Looking at cell (7,6)
+Looking at cell (8,4)
+Looking at cell (8,5)
+Looking at cell (8,6)
+We're moving to (6,6)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 6) has ev_type MOVE at time 8.450813
+Macro at (7, 3) has ev_type MOVE at time 7.813990
+Bac at (6,1) has ev_type MOVE at time 7.332638
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (6,1) BACTERIUM's MOVE at time 7.332638
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (5,0)
+Looking at cell (5,1)
+Looking at cell (5,2)
+Looking at cell (6,0)
+We found a bac there
+Looking at cell (6,2)
+Looking at cell (7,0)
+Looking at cell (7,1)
+Looking at cell (7,2)
+We're moving to (5,1)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 6) has ev_type MOVE at time 8.450813
+Macro at (7, 3) has ev_type MOVE at time 7.813990
+Bac at (5,1) has ev_type MOVE at time 8.787934
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (7,3) MACROPHAGE's MOVE at time 7.813990
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,2)
+Looking at cell (6,3)
+Looking at cell (6,4)
+Looking at cell (7,2)
+Looking at cell (7,4)
+Looking at cell (8,2)
+Looking at cell (8,3)
+Looking at cell (8,4)
+We're moving to (7,2)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 6) has ev_type MOVE at time 8.450813
+Macro at (7, 2) has ev_type MOVE at time 8.558627
+Bac at (5,1) has ev_type MOVE at time 8.787934
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (6,6) MACROPHAGE's MOVE at time 8.450813
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (5,5)
+Looking at cell (5,6)
+Looking at cell (5,7)
+Looking at cell (6,5)
+Looking at cell (6,7)
+Looking at cell (7,5)
+Looking at cell (7,6)
+Looking at cell (7,7)
+We're moving to (6,7)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 2) has ev_type MOVE at time 8.558627
+Bac at (5,1) has ev_type MOVE at time 8.787934
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (7,2) MACROPHAGE's MOVE at time 8.558627
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,1)
+Looking at cell (6,2)
+Looking at cell (6,3)
+Looking at cell (7,1)
+Looking at cell (7,3)
+Looking at cell (8,1)
+Looking at cell (8,2)
+Looking at cell (8,3)
+We're moving to (8,1)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (8, 1) has ev_type MOVE at time 8.994790
+Bac at (5,1) has ev_type MOVE at time 8.787934
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (5,1) BACTERIUM's MOVE at time 8.787934
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,0)
+Looking at cell (4,1)
+Looking at cell (4,2)
+Looking at cell (5,0)
+Looking at cell (5,2)
+Looking at cell (6,0)
+We found a bac there
+Looking at cell (6,1)
+Looking at cell (6,2)
+We're moving to (5,0)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (8, 1) has ev_type MOVE at time 8.994790
+Bac at (5,0) has ev_type MOVE at time 8.799506
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (5,0) BACTERIUM's MOVE at time 8.799506
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,9)
+Looking at cell (4,0)
+Looking at cell (4,1)
+Looking at cell (5,9)
+Looking at cell (5,1)
+Looking at cell (6,9)
+Looking at cell (6,0)
+We found a bac there
+Looking at cell (6,1)
+We're moving to (6,9)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (8, 1) has ev_type MOVE at time 8.994790
+Bac at (6,9) has ev_type MOVE at time 10.252222
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (8,1) MACROPHAGE's MOVE at time 8.994790
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (7,0)
+Looking at cell (7,1)
+Looking at cell (7,2)
+Looking at cell (8,0)
+Looking at cell (8,2)
+Looking at cell (9,0)
+Looking at cell (9,1)
+Looking at cell (9,2)
+We're moving to (7,1)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (6,9) has ev_type MOVE at time 10.252222
+Bac at (6,0) has ev_type MOVE at time 9.332757
+So the next event is a (6,0) BACTERIUM's MOVE at time 9.332757
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (5,9)
+Looking at cell (5,0)
+Looking at cell (5,1)
+Looking at cell (6,9)
+We found a bac there
+Looking at cell (6,1)
+Looking at cell (7,9)
+Looking at cell (7,0)
+Looking at cell (7,1)
+We're moving to (5,0)
+Macro at (2, 7) has ev_type MOVE at time 9.998346
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (6,9) has ev_type MOVE at time 10.252222
+Bac at (5,0) has ev_type DIVIDE at time 10.244055
+So the next event is a (2,7) MACROPHAGE's MOVE at time 9.998346
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (1,6)
+Looking at cell (1,7)
+Looking at cell (1,8)
+Looking at cell (2,6)
+Looking at cell (2,8)
+Looking at cell (3,6)
+Looking at cell (3,7)
+Looking at cell (3,8)
+We're moving to (1,8)
+Macro at (1, 8) has ev_type MOVE at time 11.635634
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (6,9) has ev_type MOVE at time 10.252222
+Bac at (5,0) has ev_type DIVIDE at time 10.244055
+So the next event is a (5,0) BACTERIUM's DIVIDE at time 10.244055
+Let's see what's next
+We're popping out a baby to (4,9)
+Macro at (1, 8) has ev_type MOVE at time 11.635634
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (6,9) has ev_type MOVE at time 10.252222
+Bac at (5,0) has ev_type MOVE at time 12.970593
+Bac at (4,9) has ev_type MOVE at time 1.800210
+So the next event is a (4,9) BACTERIUM's MOVE at time 1.800210
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,8)
+Looking at cell (3,9)
+Looking at cell (3,0)
+Looking at cell (4,8)
+Looking at cell (4,0)
+Looking at cell (5,8)
+Looking at cell (5,9)
+Looking at cell (5,0)
+We found a bac there
+We're moving to (3,0)
+Macro at (1, 8) has ev_type MOVE at time 11.635634
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (6,9) has ev_type MOVE at time 10.252222
+Bac at (5,0) has ev_type MOVE at time 12.970593
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (6,9) BACTERIUM's MOVE at time 10.252222
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (5,8)
+Looking at cell (5,9)
+Looking at cell (5,0)
+We found a bac there
+Looking at cell (6,8)
+Looking at cell (6,0)
+Looking at cell (7,8)
+Looking at cell (7,9)
+Looking at cell (7,0)
+We're moving to (7,8)
+Macro at (1, 8) has ev_type MOVE at time 11.635634
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (7,8) has ev_type MOVE at time 10.480259
+Bac at (5,0) has ev_type MOVE at time 12.970593
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (7,8) BACTERIUM's MOVE at time 10.480259
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (6,7)
+Looking at cell (6,8)
+Looking at cell (6,9)
+Looking at cell (7,7)
+Looking at cell (7,9)
+Looking at cell (8,7)
+Looking at cell (8,8)
+Looking at cell (8,9)
+We're moving to (6,7)
+Whoops, I walked into a Mac and I need to be eaten
+Macro at (1, 8) has ev_type MOVE at time 11.635634
+Macro at (6, 7) has ev_type EAT at time 10.480259
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (6,7) has ev_type DIVIDE at time 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000.000000
+Bac at (5,0) has ev_type MOVE at time 12.970593
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (6,7) MACROPHAGE's EAT at time 10.480259
+Let's see what's next
+A bac should've just been deleted
+Macro at (1, 8) has ev_type MOVE at time 11.635634
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (5,0) has ev_type MOVE at time 12.970593
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (1,8) MACROPHAGE's MOVE at time 11.635634
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (0,7)
+Looking at cell (0,8)
+Looking at cell (0,9)
+Looking at cell (1,7)
+Looking at cell (1,9)
+Looking at cell (2,7)
+Looking at cell (2,8)
+Looking at cell (2,9)
+We're moving to (2,8)
+Macro at (2, 8) has ev_type MOVE at time 14.830270
+Macro at (6, 7) has ev_type MOVE at time 12.584835
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (5,0) has ev_type MOVE at time 12.970593
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (6,7) MACROPHAGE's MOVE at time 12.584835
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (5,6)
+Looking at cell (5,7)
+Looking at cell (5,8)
+Looking at cell (6,6)
+Looking at cell (6,8)
+Looking at cell (7,6)
+Looking at cell (7,7)
+Looking at cell (7,8)
+We're moving to (5,7)
+Macro at (2, 8) has ev_type MOVE at time 14.830270
+Macro at (5, 7) has ev_type MOVE at time 14.152425
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (5,0) has ev_type MOVE at time 12.970593
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (5,0) BACTERIUM's MOVE at time 12.970593
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,9)
+Looking at cell (4,0)
+Looking at cell (4,1)
+Looking at cell (5,9)
+Looking at cell (5,1)
+Looking at cell (6,9)
+Looking at cell (6,0)
+Looking at cell (6,1)
+We're moving to (4,0)
+Macro at (2, 8) has ev_type MOVE at time 14.830270
+Macro at (5, 7) has ev_type MOVE at time 14.152425
+Macro at (7, 1) has ev_type MOVE at time 12.979976
+Bac at (4,0) has ev_type MOVE at time 14.815806
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (7,1) MACROPHAGE's MOVE at time 12.979976
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (6,0)
+Looking at cell (6,1)
+Looking at cell (6,2)
+Looking at cell (7,0)
+Looking at cell (7,2)
+Looking at cell (8,0)
+Looking at cell (8,1)
+Looking at cell (8,2)
+We're moving to (8,1)
+Macro at (2, 8) has ev_type MOVE at time 14.830270
+Macro at (5, 7) has ev_type MOVE at time 14.152425
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (4,0) has ev_type MOVE at time 14.815806
+Bac at (3,0) has ev_type MOVE at time 13.502649
+So the next event is a (3,0) BACTERIUM's MOVE at time 13.502649
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (2,9)
+Looking at cell (2,0)
+Looking at cell (2,1)
+Looking at cell (3,9)
+Looking at cell (3,1)
+Looking at cell (4,9)
+Looking at cell (4,0)
+We found a bac there
+Looking at cell (4,1)
+We're moving to (4,9)
+Macro at (2, 8) has ev_type MOVE at time 14.830270
+Macro at (5, 7) has ev_type MOVE at time 14.152425
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (4,0) has ev_type MOVE at time 14.815806
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (5,7) MACROPHAGE's MOVE at time 14.152425
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (4,6)
+Looking at cell (4,7)
+Looking at cell (4,8)
+Looking at cell (5,6)
+Looking at cell (5,8)
+Looking at cell (6,6)
+Looking at cell (6,7)
+Looking at cell (6,8)
+We're moving to (4,6)
+Macro at (2, 8) has ev_type MOVE at time 14.830270
+Macro at (4, 6) has ev_type MOVE at time 15.382370
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (4,0) has ev_type MOVE at time 14.815806
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (4,0) BACTERIUM's MOVE at time 14.815806
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,9)
+Looking at cell (3,0)
+Looking at cell (3,1)
+Looking at cell (4,9)
+We found a bac there
+Looking at cell (4,1)
+Looking at cell (5,9)
+Looking at cell (5,0)
+Looking at cell (5,1)
+We're moving to (5,0)
+Macro at (2, 8) has ev_type MOVE at time 14.830270
+Macro at (4, 6) has ev_type MOVE at time 15.382370
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (5,0) has ev_type MOVE at time 15.427497
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (2,8) MACROPHAGE's MOVE at time 14.830270
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (1,7)
+Looking at cell (1,8)
+Looking at cell (1,9)
+Looking at cell (2,7)
+Looking at cell (2,9)
+Looking at cell (3,7)
+Looking at cell (3,8)
+Looking at cell (3,9)
+We're moving to (2,9)
+Macro at (2, 9) has ev_type MOVE at time 15.191089
+Macro at (4, 6) has ev_type MOVE at time 15.382370
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (5,0) has ev_type MOVE at time 15.427497
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (2,9) MACROPHAGE's MOVE at time 15.191089
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (1,8)
+Looking at cell (1,9)
+Looking at cell (1,0)
+Looking at cell (2,8)
+Looking at cell (2,0)
+Looking at cell (3,8)
+Looking at cell (3,9)
+Looking at cell (3,0)
+We're moving to (2,0)
+Macro at (2, 0) has ev_type MOVE at time 16.276313
+Macro at (4, 6) has ev_type MOVE at time 15.382370
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (5,0) has ev_type MOVE at time 15.427497
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (4,6) MACROPHAGE's MOVE at time 15.382370
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (3,5)
+Looking at cell (3,6)
+Looking at cell (3,7)
+Looking at cell (4,5)
+Looking at cell (4,7)
+Looking at cell (5,5)
+Looking at cell (5,6)
+Looking at cell (5,7)
+We're moving to (5,7)
+Macro at (2, 0) has ev_type MOVE at time 16.276313
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (5,0) has ev_type MOVE at time 15.427497
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (5,0) BACTERIUM's MOVE at time 15.427497
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,9)
+We found a bac there
+Looking at cell (4,0)
+Looking at cell (4,1)
+Looking at cell (5,9)
+Looking at cell (5,1)
+Looking at cell (6,9)
+Looking at cell (6,0)
+Looking at cell (6,1)
+We're moving to (4,1)
+Macro at (2, 0) has ev_type MOVE at time 16.276313
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (8, 1) has ev_type MOVE at time 15.571991
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (8,1) MACROPHAGE's MOVE at time 15.571991
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (7,0)
+Looking at cell (7,1)
+Looking at cell (7,2)
+Looking at cell (8,0)
+Looking at cell (8,2)
+Looking at cell (9,0)
+Looking at cell (9,1)
+Looking at cell (9,2)
+We're moving to (8,2)
+Macro at (2, 0) has ev_type MOVE at time 16.276313
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (8, 2) has ev_type MOVE at time 16.897503
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (4,9) has ev_type MOVE at time 15.859470
+So the next event is a (4,9) BACTERIUM's MOVE at time 15.859470
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,8)
+Looking at cell (3,9)
+Looking at cell (3,0)
+Looking at cell (4,8)
+Looking at cell (4,0)
+Looking at cell (5,8)
+Looking at cell (5,9)
+Looking at cell (5,0)
+We're moving to (3,8)
+Macro at (2, 0) has ev_type MOVE at time 16.276313
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (8, 2) has ev_type MOVE at time 16.897503
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (3,8) has ev_type MOVE at time 16.257253
+So the next event is a (3,8) BACTERIUM's MOVE at time 16.257253
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (2,7)
+Looking at cell (2,8)
+Looking at cell (2,9)
+Looking at cell (3,7)
+Looking at cell (3,9)
+Looking at cell (4,7)
+Looking at cell (4,8)
+Looking at cell (4,9)
+We're moving to (3,7)
+Macro at (2, 0) has ev_type MOVE at time 16.276313
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (8, 2) has ev_type MOVE at time 16.897503
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (3,7) has ev_type MOVE at time 16.990015
+So the next event is a (2,0) MACROPHAGE's MOVE at time 16.276313
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (1,9)
+Looking at cell (1,0)
+Looking at cell (1,1)
+Looking at cell (2,9)
+Looking at cell (2,1)
+Looking at cell (3,9)
+Looking at cell (3,0)
+Looking at cell (3,1)
+We're moving to (1,9)
+Macro at (1, 9) has ev_type MOVE at time 17.593398
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (8, 2) has ev_type MOVE at time 16.897503
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (3,7) has ev_type MOVE at time 16.990015
+So the next event is a (8,2) MACROPHAGE's MOVE at time 16.897503
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (7,1)
+Looking at cell (7,2)
+Looking at cell (7,3)
+Looking at cell (8,1)
+Looking at cell (8,3)
+Looking at cell (9,1)
+Looking at cell (9,2)
+Looking at cell (9,3)
+We're moving to (9,2)
+Macro at (1, 9) has ev_type MOVE at time 17.593398
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (9, 2) has ev_type MOVE at time 18.705132
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (3,7) has ev_type MOVE at time 16.990015
+So the next event is a (3,7) BACTERIUM's MOVE at time 16.990015
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (2,6)
+Looking at cell (2,7)
+Looking at cell (2,8)
+Looking at cell (3,6)
+Looking at cell (3,8)
+Looking at cell (4,6)
+Looking at cell (4,7)
+Looking at cell (4,8)
+We're moving to (2,8)
+Macro at (1, 9) has ev_type MOVE at time 17.593398
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (9, 2) has ev_type MOVE at time 18.705132
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (2,8) has ev_type MOVE at time 18.069670
+So the next event is a (1,9) MACROPHAGE's MOVE at time 17.593398
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (0,8)
+Looking at cell (0,9)
+Looking at cell (0,0)
+Looking at cell (1,8)
+Looking at cell (1,0)
+Looking at cell (2,8)
+We found a bac there
+Looking at cell (2,9)
+Looking at cell (2,0)
+We're moving to (2,8)
+Macro at (2, 8) has ev_type EAT at time 17.593398
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (9, 2) has ev_type MOVE at time 18.705132
+Bac at (4,1) has ev_type MOVE at time 19.470807
+Bac at (2,8) has ev_type MOVE at time 18.069670
+So the next event is a (2,8) MACROPHAGE's EAT at time 17.593398
+Let's see what's next
+A bac should've just been deleted
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (9, 2) has ev_type MOVE at time 18.705132
+Bac at (4,1) has ev_type MOVE at time 19.470807
+So the next event is a (9,2) MACROPHAGE's MOVE at time 18.705132
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (8,1)
+Looking at cell (8,2)
+Looking at cell (8,3)
+Looking at cell (9,1)
+Looking at cell (9,3)
+Looking at cell (0,1)
+Looking at cell (0,2)
+Looking at cell (0,3)
+We're moving to (0,2)
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (5, 7) has ev_type MOVE at time 18.922428
+Macro at (0, 2) has ev_type MOVE at time 25.066675
+Bac at (4,1) has ev_type MOVE at time 19.470807
+So the next event is a (5,7) MACROPHAGE's MOVE at time 18.922428
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (4,6)
+Looking at cell (4,7)
+Looking at cell (4,8)
+Looking at cell (5,6)
+Looking at cell (5,8)
+Looking at cell (6,6)
+Looking at cell (6,7)
+Looking at cell (6,8)
+We're moving to (6,6)
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (6, 6) has ev_type MOVE at time 19.531934
+Macro at (0, 2) has ev_type MOVE at time 25.066675
+Bac at (4,1) has ev_type MOVE at time 19.470807
+So the next event is a (4,1) BACTERIUM's MOVE at time 19.470807
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,0)
+Looking at cell (3,1)
+Looking at cell (3,2)
+Looking at cell (4,0)
+Looking at cell (4,2)
+Looking at cell (5,0)
+Looking at cell (5,1)
+Looking at cell (5,2)
+We're moving to (4,2)
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (6, 6) has ev_type MOVE at time 19.531934
+Macro at (0, 2) has ev_type MOVE at time 25.066675
+Bac at (4,2) has ev_type MOVE at time 19.488500
+So the next event is a (4,2) BACTERIUM's MOVE at time 19.488500
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (3,1)
+Looking at cell (3,2)
+Looking at cell (3,3)
+Looking at cell (4,1)
+Looking at cell (4,3)
+Looking at cell (5,1)
+Looking at cell (5,2)
+Looking at cell (5,3)
+We're moving to (5,3)
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (6, 6) has ev_type MOVE at time 19.531934
+Macro at (0, 2) has ev_type MOVE at time 25.066675
+Bac at (5,3) has ev_type DIVIDE at time 19.829629
+So the next event is a (6,6) MACROPHAGE's MOVE at time 19.531934
+Let's see what's next
+Macro is looking in its Moore neighborhood
+Looking at cell (5,5)
+Looking at cell (5,6)
+Looking at cell (5,7)
+Looking at cell (6,5)
+Looking at cell (6,7)
+Looking at cell (7,5)
+Looking at cell (7,6)
+Looking at cell (7,7)
+We're moving to (7,6)
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (7, 6) has ev_type MOVE at time 22.466246
+Macro at (0, 2) has ev_type MOVE at time 25.066675
+Bac at (5,3) has ev_type DIVIDE at time 19.829629
+So the next event is a (5,3) BACTERIUM's DIVIDE at time 19.829629
+Let's see what's next
+We're popping out a baby to (5,2)
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (7, 6) has ev_type MOVE at time 22.466246
+Macro at (0, 2) has ev_type MOVE at time 25.066675
+Bac at (5,3) has ev_type MOVE at time 20.356901
+Bac at (5,2) has ev_type MOVE at time 1.352454
+So the next event is a (5,2) BACTERIUM's MOVE at time 1.352454
+Let's see what's next
+Bac is looking in its Moore neighborhood
+Looking at cell (4,1)
+Looking at cell (4,2)
+Looking at cell (4,3)
+Looking at cell (5,1)
+Looking at cell (5,3)
+We found a bac there
+Looking at cell (6,1)
+Looking at cell (6,2)
+Looking at cell (6,3)
+We're moving to (6,1)
+Macro at (2, 8) has ev_type MOVE at time 21.878707
+Macro at (7, 6) has ev_type MOVE at time 22.466246
+Macro at (0, 2) has ev_type MOVE at time 25.066675
+Bac at (5,3) has ev_type MOVE at time 20.356901
+Bac at (6,1) has ev_type MOVE at time 24.285078
+So the next event is a (5,3) BACTERIUM's MOVE at time 20.356901
