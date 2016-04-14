@@ -43,7 +43,12 @@ public class Simulation extends SimulationManager
         this.maxTime = maxTime;
         macrophageList = new ArrayList<Agent>();
         bacteriaList   = new ArrayList<Agent>();
-        landscape = new Cell[numCells][numCells];
+        landscape = new Cell[numCells][numCells]; //now the landscape is init'd, but..
+        for(int i=0; i<numCells; i++){
+            for(int j=0;j<numCells;j++){
+                landscape[i][j] = new Cell(i,j);
+            }
+        }
 
         // as a simple example, construct the initial macrophages and
         // bacteria and add them "at random" (not really, here) to the
@@ -60,9 +65,10 @@ public class Simulation extends SimulationManager
         for (int randy : hs) //place macs/bacs in the landscape
         //according to the linearized order of their random ints
         {
+          System.out.printf("Randy/numCols = %d, Randy%%numCols = %d%n",randy/numCols,randy%numCols);
           if(id < numMacrophages){
             Agent a = new Macro(macSpeed,rng);
-            landscape[randy/numCols][randy%numCols].occupy(a);
+            (landscape[randy/numCols][randy%numCols]).occupy(a);
             macrophageList.add(a);
           } else {
             Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,rng);
@@ -96,6 +102,7 @@ public class Simulation extends SimulationManager
                     nextEv = b.getNextEv();
             }
             //Now nextEv holds the next thing that's supposed to happen. Does it?
+            System.out.printf("Evt Owner Type: %s%n",nextEv.owner.getType().name());
             System.out.printf("So the next event is a (%d,%d) %s's %s at time %f%n",nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.owner.getType().name(), nextEv.type.name(), nextEv.time);
             sim_clock = nextEv.time;
 

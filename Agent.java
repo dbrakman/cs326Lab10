@@ -5,7 +5,7 @@ import java.util.Random;
 public abstract class Agent implements AgentInterface
 {
 
-    protected AgentType type; //is either mac or bac. Legacy holdover
+    protected AgentType type; //is either mac or bac.
     public AgentType getType() { return(type); }
 
     //private static final int NUM_NEIGHBORS = 8;//Moore neighborhood

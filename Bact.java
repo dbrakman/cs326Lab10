@@ -4,17 +4,16 @@ import java.util.Random;
 
 public class Bact extends Agent implements AgentInterface
 {
-	Agent.AgentType type=Agent.AgentType.BACTERIUM;
-
-	private static int IDBASE = 0;
-	private double bacSpeed;
+    private static int IDBASE = 0;
+    private double bacSpeed;
     private int bacDivShape;
     private double bacDivScale;
 
     public Bact(double startTime, double bacSpeed, int bacDivShape,
     			 double bacDivScale, Random rng)
     {
-        //Construct a Macrophage at startTime w/ movement speed macSpeed
+        //Construct a Bact at startTime w/ movement speed macSpeed
+        type=Agent.AgentType.BACTERIUM;
         ID = IDBASE++;
         this.bacSpeed = bacSpeed;
         this.bacDivShape = bacDivShape;

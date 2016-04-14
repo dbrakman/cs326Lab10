@@ -4,13 +4,12 @@ import java.util.Random;
 
 public class Macro extends Agent implements AgentInterface
 {
-    Agent.AgentType type = Agent.AgentType.MACROPHAGE;
-
     private static int IDBASE = 0;
     private double macSpeed;
     
     public Macro(double startTime, double macSpeed, Random rng)
     {
+        type = Agent.AgentType.MACROPHAGE;
         //Construct a Macrophage at startTime w/ movement speed macSpeed
         ID = IDBASE++;
         this.macSpeed = macSpeed;
