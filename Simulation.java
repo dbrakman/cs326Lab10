@@ -19,6 +19,7 @@ public class Simulation extends SimulationManager
     private int guiCellWidth;
     private Random rng;
     private double maxTime;
+    private Cell[][] landscape;
     /**************************************************************************
      * Constructs a Simulation object.  This should just perform initialization
      * and setup.  Later use the object to .run() the simulation.
@@ -85,20 +86,14 @@ public class Simulation extends SimulationManager
 
         Event nextEv = new Event(null, Double.MAX_VALUE, Event.EventType.UNDEF);
         for( Agent m : macrophageList ){
-                System.out.printf("Macro at (%d, %d) has ev_type %s at time %f%n",m.getRow(),m.getCol(),m.getNextEvent().name(),m.getNextTime());
-                if( nextEv.time > m.getNextTime() ){
-                    nextEv.time = m.getNextTime();
-                    nextEv.type = m.getNextEvent();
-                    nextEv.owner = m;
-                }
+            System.out.printf("Macro at (%d, %d) has ev_type %s at time %f%n",m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
+            if( nextEv.time > m.getNextEv().time )
+                nextEv = m.getNextEv();
             }
             for( Agent b : bacteriaList ){
-                System.out.printf("Bac at (%d,%d) has ev_type %s at time %f%n",b.getRow(),b.getCol(),b.getNextEvent().name(),b.getNextTime());
-                if( nextEv.time > b.getNextTime() ){
-                    nextEv.time = b.getNextTime();
-                    nextEv.type = b.getNextEvent();
-                    nextEv.owner = b;
-                }
+                System.out.printf("Bac at (%d,%d) has ev_type %s at time %f%n",b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
+                if( nextEv.time > b.getNextEv().time )
+                    nextEv = b.getNextEv();
             }
             //Now nextEv holds the next thing that's supposed to happen. Does it?
             System.out.printf("So the next event is a (%d,%d) %s's %s at time %f%n",nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.owner.getType().name(), nextEv.type.name(), nextEv.time);
@@ -107,28 +102,22 @@ public class Simulation extends SimulationManager
         while (sim_clock < maxTime){
             System.out.println("Let's see what's next");
             if(nextEv.type == Event.EventType.MOVE){
-                nextEv.owner.move(numCells, macrophageList, bacteriaList, rng);
+                nextEv.owner.move(landscape, rng);
             } else if(nextEv.type == Event.EventType.EAT){
-                nextEv.owner.eat(bacteriaList);
+                nextEv.owner.eat(landscape, bacteriaList);
             } else {
-                nextEv.owner.divide(numCells, macrophageList,bacteriaList, rng);
+                nextEv.owner.divide(landscape, bacteriaList, rng);
             }
             nextEv.time = Double.MAX_VALUE; //reset the nextEv so we don't keep repeating the same event
             for( Agent m : macrophageList ){
-                System.out.printf("Macro at (%d, %d) has ev_type %s at time %f%n",m.getRow(),m.getCol(),m.getNextEvent().name(),m.getNextTime());
-                if( nextEv.time > m.getNextTime() ){
-                    nextEv.time = m.getNextTime();
-                    nextEv.type = m.getNextEvent();
-                    nextEv.owner = m;
-                }
+            System.out.printf("Macro at (%d, %d) has ev_type %s at time %f%n",m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
+            if( nextEv.time > m.getNextEv().time )
+                nextEv = m.getNextEv();
             }
             for( Agent b : bacteriaList ){
-                System.out.printf("Bac at (%d,%d) has ev_type %s at time %f%n",b.getRow(),b.getCol(),b.getNextEvent().name(),b.getNextTime());
-                if( nextEv.time > b.getNextTime() ){
-                    nextEv.time = b.getNextTime();
-                    nextEv.type = b.getNextEvent();
-                    nextEv.owner = b;
-                }
+                System.out.printf("Bac at (%d,%d) has ev_type %s at time %f%n",b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
+                if( nextEv.time > b.getNextEv().time )
+                    nextEv = b.getNextEv();
             }
             //Now nextEv holds the next thing that's supposed to happen. Does it?
             System.out.printf("So the next event is a (%d,%d) %s's %s at time %f%n",nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.owner.getType().name(), nextEv.type.name(), nextEv.time);

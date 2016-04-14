@@ -6,8 +6,8 @@ public abstract class Agent implements AgentInterface
 {
 
 
-    private AgentType type; //is either mac or bac. Legacy holdover
-    public AgentType getType() { return(type); }
+    //private AgentType type; //is either mac or bac. Legacy holdover
+    //public AgentType getType() { return(type); }
 
     private static final int NUM_NEIGHBORS = 8;//Moore neighborhood
 
@@ -15,7 +15,7 @@ public abstract class Agent implements AgentInterface
     public int getID() { return(ID); }
 
     //Recall order: [MOVE, EAT, DIVIDE, UNDEF]
-    private Event cal[Event.EventType.values().length];
+    private Event[] cal = new Event[Event.EventType.values().length];
     //^^A list of all possible events, comprising a calendar. 
     public Event getNextEv() 
     {// returns the next (most imminent) event in this Agent's calendar
@@ -37,6 +37,31 @@ public abstract class Agent implements AgentInterface
       //stored here for efficient lookup
         this.row = row;
         this.col = col;
+    }
+
+    public double exponential(double m, Random rng)
+/* =========================================================
+ * Returns an exponentially distributed positive real number. 
+ * NOTE: use m > 0.0
+ * =========================================================
+ */
+    {
+	return (-m * Math.log(1.0 - rng.random()));
+    }
+
+    public double erlang(long n, double b, Random rng)
+/* ================================================== 
+ * Returns an Erlang distributed positive real number.
+ * NOTE: use n > 0 and b > 0.0
+ * ==================================================
+ */
+    { 
+	long   i;
+	double x = 0.0;
+	
+	for (i = 0; i < n; i++) 
+	    x += exponential(b, rng);
+	return (x);
     }
   /*
     public void setNextEvent(double time, Event.EventType type){

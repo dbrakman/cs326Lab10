@@ -1,9 +1,12 @@
+import java.awt.Point;
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Bact extends Agent implements AgentInterface
 {
-	super.type=Agent.AgentType.BACTERIUM;
+	//type=Agent.AgentType.BACTERIUM;
 
 	private static int IDBASE = 0;
-	private Rvgs rvg;
 	private double bacSpeed;
     //constructor
 
@@ -12,11 +15,10 @@ public class Bact extends Agent implements AgentInterface
     {
         //Construct a Macrophage at startTime w/ movement speed macSpeed
         ID = IDBASE++;
-        rvg = new Rvgs(rng);
         this.bacSpeed = bacSpeed;
-        cal[0] = new Event(this,startTime+rvg.exponential(bacSpeed),Event.EventType.MOVE);
+        cal[0] = new Event(this,startTime+Agent.exponential(bacSpeed, rng),Event.EventType.MOVE);
         cal[1] = new Event(this,Double.MAX_VALUE,Event.EventType.EAT);
-        cal[2] = new Event(this,startTime+rvg.erlang(bacDivShape,bacDivScale),Event.EventType.DIVIDE);
+        cal[2] = new Event(this,startTime+Agent.erlang(bacDivShape,bacDivScale, rng),Event.EventType.DIVIDE);
         cal[3] = new Event(this,Double.MAX_VALUE,Event.EventType.UNDEF);
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
     }
@@ -46,7 +48,7 @@ public class Bact extends Agent implements AgentInterface
             Point dest_point = nobac_coord.get(dest);
             landscape[dest_point.x][dest_point.y].occupy(this); //move there
  		}
-        cal[0] = new Event(this,cal[0].time+rvg.exponential(bacSpeed),Event.EventType.MOVE);
+        cal[0] = new Event(this,cal[0].time+Agent.exponential(bacSpeed,rng),Event.EventType.MOVE);
         //^^schedule another movement
     }
     //divide
@@ -69,9 +71,9 @@ public class Bact extends Agent implements AgentInterface
             Point dest_point = nobac_coord.get(dest);
 
         	Bact daughter = new Bact(cal[2].time,bacSpeed,bacDivShape,bacDivScale,rng);
-            landscape[dest_point.x,dest_point.y].occupy(daughter);
+            landscape[dest_point.x][dest_point.y].occupy(daughter);
         	bacList.add(daughter);
         }
-        cal[2] = new Event(this,cal[2].time+rvg.erlang(bacDivShape,bacDivScale),Event.EventType.DIVIDE);
+        cal[2] = new Event(this,cal[2].time+Agent.erlang(bacDivShape,bacDivScale,rng),Event.EventType.DIVIDE);
     }
 }
