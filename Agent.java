@@ -5,21 +5,20 @@ import java.util.Random;
 public abstract class Agent implements AgentInterface
 {
 
+    protected AgentType type; //is either mac or bac. Legacy holdover
+    public AgentType getType() { return(type); }
 
-    //private AgentType type; //is either mac or bac. Legacy holdover
-    //public AgentType getType() { return(type); }
+    //private static final int NUM_NEIGHBORS = 8;//Moore neighborhood
 
-    private static final int NUM_NEIGHBORS = 8;//Moore neighborhood
-
-    private int ID;
+    protected int ID;
     public int getID() { return(ID); }
 
     //Recall order: [MOVE, EAT, DIVIDE, UNDEF]
-    private Event[] cal = new Event[Event.EventType.values().length];
+    protected Event[] cal = new Event[Event.EventType.values().length];
     //^^A list of all possible events, comprising a calendar. 
     public Event getNextEv() 
     {// returns the next (most imminent) event in this Agent's calendar
-        Event e;
+        Event e = new Event();
         e.time = Double.MAX_VALUE;
         for( Event ev : cal ){
             if( ev.time < e.time )
@@ -28,8 +27,8 @@ public abstract class Agent implements AgentInterface
         return e;
     }
 
-    private int row;
-    private int col;
+    protected int row;
+    protected int col;
     public int getRow() { return(row); }
     public int getCol() { return(col); }
     public void setRowCol(int row, int col)
@@ -39,17 +38,17 @@ public abstract class Agent implements AgentInterface
         this.col = col;
     }
 
-    public double exponential(double m, Random rng)
+    public static double exponential(double m, Random rng)
 /* =========================================================
  * Returns an exponentially distributed positive real number. 
  * NOTE: use m > 0.0
  * =========================================================
  */
     {
-	return (-m * Math.log(1.0 - rng.random()));
+	return (-m * Math.log(1.0 - rng.nextDouble()));
     }
 
-    public double erlang(long n, double b, Random rng)
+    public static double erlang(long n, double b, Random rng)
 /* ================================================== 
  * Returns an Erlang distributed positive real number.
  * NOTE: use n > 0 and b > 0.0

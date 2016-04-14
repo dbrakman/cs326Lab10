@@ -4,11 +4,12 @@ import java.util.Random;
 
 public class Bact extends Agent implements AgentInterface
 {
-	//type=Agent.AgentType.BACTERIUM;
+	Agent.AgentType type=Agent.AgentType.BACTERIUM;
 
 	private static int IDBASE = 0;
 	private double bacSpeed;
-    //constructor
+    private int bacDivShape;
+    private double bacDivScale;
 
     public Bact(double startTime, double bacSpeed, int bacDivShape,
     			 double bacDivScale, Random rng)
@@ -16,6 +17,8 @@ public class Bact extends Agent implements AgentInterface
         //Construct a Macrophage at startTime w/ movement speed macSpeed
         ID = IDBASE++;
         this.bacSpeed = bacSpeed;
+        this.bacDivShape = bacDivShape;
+        this.bacDivScale = bacDivScale;
         cal[0] = new Event(this,startTime+Agent.exponential(bacSpeed, rng),Event.EventType.MOVE);
         cal[1] = new Event(this,Double.MAX_VALUE,Event.EventType.EAT);
         cal[2] = new Event(this,startTime+Agent.erlang(bacDivShape,bacDivScale, rng),Event.EventType.DIVIDE);
@@ -23,8 +26,8 @@ public class Bact extends Agent implements AgentInterface
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
     }
 
-    public Bact(int bacDivShape, double bacDivScale, Random rng){ 
-    	super(0.0,bacDivShape, bacDivScale,rng); 
+    public Bact(double bacSpeed, int bacDivShape, double bacDivScale, Random rng){ 
+    	this(0.0, bacSpeed, bacDivShape, bacDivScale,rng); 
     }
 
     //move

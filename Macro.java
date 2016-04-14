@@ -4,26 +4,24 @@ import java.util.Random;
 
 public class Macro extends Agent implements AgentInterface
 {
-    //type=Agent.AgentType.MACROPHAGE;
+    Agent.AgentType type = Agent.AgentType.MACROPHAGE;
 
     private static int IDBASE = 0;
-    private Rvgs rvg;
     private double macSpeed;
     
     public Macro(double startTime, double macSpeed, Random rng)
     {
         //Construct a Macrophage at startTime w/ movement speed macSpeed
         ID = IDBASE++;
-        rvg = new Rvgs(rng);
         this.macSpeed = macSpeed;
-        cal[0] = new Event(this,startTime+rvg.exponential(macSpeed),Event.EventType.MOVE);
+        cal[0] = new Event(this,startTime+Agent.exponential(macSpeed,rng),Event.EventType.MOVE);
         cal[1] = new Event(this,Double.MAX_VALUE,Event.EventType.EAT);
         cal[2] = new Event(this,Double.MAX_VALUE,Event.EventType.DIVIDE);
         cal[3] = new Event(this,Double.MAX_VALUE,Event.EventType.UNDEF);
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
     }
 
-    public Macro(double macSpeed, Random rng){ super(0.0,macSpeed,rng); }
+    public Macro(double macSpeed, Random rng){ this(0.0,macSpeed,rng); }
 
     public void move(Cell[][] landscape, Random rng)
     {
@@ -53,7 +51,7 @@ public class Macro extends Agent implements AgentInterface
             Point dest_point = nomacro_coord.get(dest);
             landscape[dest_point.x][dest_point.y].occupy(this); //move there
         }
-        cal[0] = new Event(this,cal[0].time+rvg.exponential(macSpeed),Event.EventType.MOVE);
+        cal[0] = new Event(this,cal[0].time+Agent.exponential(macSpeed,rng),Event.EventType.MOVE);
         //^^schedule another movement
     }
 
@@ -62,7 +60,7 @@ public class Macro extends Agent implements AgentInterface
             bacList.remove(landscape[row][col].removeBacterium());
             //^^remove the bact from the landscape and the bacList
         } else {
-            throw Exception("attempted to eat absent bacterium");
+            throw new RuntimeException("attempted to eat absent bacterium");
         }
     }
 

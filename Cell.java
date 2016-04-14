@@ -16,8 +16,8 @@ public class Cell
   public void occupy(Macro m) {macrophage = m; m.setRowCol(row,col); }
   public void occupy(Bact b) { bacterium = b; b.setRowCol(row,col); }
 
-  public Macro removeMacrophage() { macrophage.setRowCol(-1,-1); macrophage = null; }
-  public Bact removeBacterium() { bacterium.setRowCol(-1,-1); bacterium = null; }
+  public Macro removeMacrophage() { macrophage.setRowCol(-1,-1); Macro tmp = macrophage; macrophage = null; return(tmp); }
+  public Bact removeBacterium() { bacterium.setRowCol(-1,-1); Bact tmp = bacterium; bacterium = null; return(tmp); }
 
   public int getRow() { return row; }
   public int getCol() { return col; }
