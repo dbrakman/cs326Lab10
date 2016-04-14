@@ -54,6 +54,13 @@ public class Bact extends Agent implements AgentInterface
         cal[0] = new Event(this,cal[0].time+Agent.exponential(bacSpeed,rng),Event.EventType.MOVE);
         //^^schedule another movement
     }
+
+    //Override Agent's eat method, even though bacts can't eat:
+    public void eat(Cell[][] landscape, ArrayList<Agent> bacList)
+    {
+        throw new RuntimeException("Bacs can't eat, dummy!");
+    }
+
     //divide
     public void divide(Cell[][] landscape, ArrayList<Agent> bacList, Random rng)
     {

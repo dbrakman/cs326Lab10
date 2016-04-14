@@ -43,7 +43,7 @@ public class Simulation extends SimulationManager
         this.maxTime = maxTime;
         macrophageList = new ArrayList<Agent>();
         bacteriaList   = new ArrayList<Agent>();
-        landscape = Cell[numCells][numCells];
+        landscape = new Cell[numCells][numCells];
 
         // as a simple example, construct the initial macrophages and
         // bacteria and add them "at random" (not really, here) to the
@@ -61,11 +61,11 @@ public class Simulation extends SimulationManager
         //according to the linearized order of their random ints
         {
           if(id < numMacrophages){
-            Agent a = new Macro(rng);
+            Agent a = new Macro(macSpeed,rng);
             landscape[randy/numCols][randy%numCols].occupy(a);
             macrophageList.add(a);
           } else {
-            Agent a = new Bact(rng);
+            Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,rng);
             landscape[randy/numCols][randy%numCols].occupy(a);
             bacteriaList.add(a);
           }

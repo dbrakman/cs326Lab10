@@ -13,6 +13,12 @@ public class Cell
     this.bacterium = null;
   }
 
+  public void occupy(Agent a){ 
+      if(a instanceof Macro)
+          occupy((Macro)a);
+      if(a instanceof Bact)
+          occupy((Bact)a);
+  }
   public void occupy(Macro m) {macrophage = m; m.setRowCol(row,col); }
   public void occupy(Bact b) { bacterium = b; b.setRowCol(row,col); }
 

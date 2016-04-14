@@ -64,4 +64,10 @@ public class Macro extends Agent implements AgentInterface
         }
     }
 
+    //Override Agent's divide method, even though Macs can't divide
+    public void divide(Cell[][] landscape, ArrayList<Agent> bacList, Random rng)
+    {
+        throw new RuntimeException("Macs can't divide yet");
+    }
+
 }
