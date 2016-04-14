@@ -2,57 +2,43 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Agent implements AgentInterface
+public abstract class Agent implements AgentInterface
 {
-    private static int IDBASE = 0;
-    private int ID;
-    private int row;
-    private int col;
-    private AgentType type; //is either mac or bac. We're not subclassing yet
+
+
+    private AgentType type; //is either mac or bac. Legacy holdover
+    public AgentType getType() { return(type); }
+
     private static final int NUM_NEIGHBORS = 8;//Moore neighborhood
-    public static final double MAC_SPEED = 2; //Mac moves every 2 seconds, on average
-    public static final double BAC_SPEED = 1; //Bac moves every 1 sec, on avg
-    public static final double DIV_SCALE = 1; //Bac divides every 10 sec, on avg. 10 = SHAPE*SCALE
-    public static final int DIV_SHAPE = 2; //Bac div ~Gamma(shape=5,scale = 2)
 
-    //the next-event calendar
-    private double time_move;
-    private double time_eat;
-    private double time_divide;
+    private int ID;
+    public int getID() { return(ID); }
 
-    private double next_time; // equals min(time_move, time_eat, time_divide) whenever queried
-    private Event.EventType next_event;
-
-
-    public Agent(AgentType which, Random rng)
-    {
-        row = col = -1;
-        type = which;
-        ID = IDBASE++;
-        if(which == Agent.AgentType.MACROPHAGE)
-        {
-          time_eat = Double.MAX_VALUE;
-          time_move = java_rexp(MAC_SPEED,rng);
-          this.time_divide = Double.MAX_VALUE;
-          next_time = time_move;
-          next_event = Event.EventType.MOVE;
-          //System.out.printf("New Mac moves (%s) at time %.2f%n",next_event.name(),next_time);
-        }else {
-          this.time_divide = java_rgamma(DIV_SHAPE,DIV_SCALE,rng);
-          this.time_eat = Double.MAX_VALUE;
-          this.time_move = java_rexp(BAC_SPEED,rng);
-          next_time =time_move;
-          next_event = Event.EventType.MOVE;
-          //System.out.printf("New Bac moves (%s) at time %.2f%n",next_event.name(),next_time);
+    //Recall order: [MOVE, EAT, DIVIDE, UNDEF]
+    private Event cal[Event.EventType.values().length];
+    //^^A list of all possible events, comprising a calendar. 
+    public Event getNextEv() 
+    {// returns the next (most imminent) event in this Agent's calendar
+        Event e;
+        e.time = Double.MAX_VALUE;
+        for( Event ev : cal ){
+            if( ev.time < e.time )
+                e = ev;
         }
+        return e;
     }
 
-    public int getID() { return(ID); }
+    private int row;
+    private int col;
     public int getRow() { return(row); }
     public int getCol() { return(col); }
-    public double getNextTime() { return(next_time); }
-    public Event.EventType getNextEvent() { return(next_event); }
-
+    public void setRowCol(int row, int col)
+    { //these values must equal the (r,c) position in the landscape
+      //stored here for efficient lookup
+        this.row = row;
+        this.col = col;
+    }
+  /*
     public void setNextEvent(double time, Event.EventType type){
         next_time = time;
         next_event = type;
@@ -60,7 +46,8 @@ public class Agent implements AgentInterface
         else if(type == Event.EventType.EAT){time_eat = time;}
         else {time_divide = time;}
     }
-
+    */
+    /*
     public void pushTimes(double time)
     {
         //Made to bring newly hatched bacteria to the current time
@@ -68,41 +55,10 @@ public class Agent implements AgentInterface
         if(time_eat != Double.MAX_VALUE){ time_eat+=time; }
         if(time_divide != Double.MAX_VALUE){ time_divide+=time; }
     }
+    */
 
-    public static double java_rexp(double mu, Random rng)
-    {
-      double lambda = 1/mu;
-      double u = rng.nextDouble();
-      double x = Math.log(1-u)/(-lambda);
-      return x;
-    }
-
-    public static double java_rgamma(int shape, double scale, Random rng)
-    {
-        double res = 0;
-        for(int i=0; i<shape; i++){
-            res+=java_rexp(scale,rng);
-        }
-        return res;
-    }
-
-    public AgentType getType() { return(type); }
-
-    public void setRowCol(int row, int col)
-    {
-        this.row = row;
-        this.col = col;
-    }
-
-    public void move(int numCells, ArrayList<Agent> macroList,
-      ArrayList<Agent> bacList, Random rng )
-    {
-        if(this.type == Agent.AgentType.MACROPHAGE)
-          moveMacro(numCells,macroList,bacList,rng);
-        else
-          moveBac(numCells,macroList,bacList,rng);
-    }
-
+    public abstract void move(Cell[][] landscape, Random rng);
+/*
     public void moveMacro(int numCells, ArrayList<Agent> macroList, ArrayList<Agent> bacList,
                      Random rng)
     {
@@ -160,7 +116,8 @@ public class Agent implements AgentInterface
           this.time_move += java_rexp(MAC_SPEED,rng); //no matter what happens, schedule next move
           updateNextTime();
     }
-
+    */
+/*
     public void moveBac(int numCells, ArrayList<Agent> macroList, ArrayList<Agent> bacList,
                      Random rng)
     {
@@ -218,8 +175,8 @@ public class Agent implements AgentInterface
           }
           updateNextTime();
     }
-
-    public void eat(ArrayList<Agent> bacList){
+*/
+    /*public void eat(ArrayList<Agent> bacList){
         //check every bacterium. When one's found in this cell's location, eat it.
         for(int i=0; i< bacList.size(); i++){
             Agent bac = bacList.get(i);
@@ -234,9 +191,9 @@ public class Agent implements AgentInterface
             }
         }
         updateNextTime();
-    }
+    }*/
 
-    public void divide(int numCells, ArrayList<Agent> macroList, ArrayList<Agent> bacList,
+/*public void divide(int numCells, ArrayList<Agent> macroList, ArrayList<Agent> bacList,
                        Random rng)
     {
         if (this.type == AgentType.MACROPHAGE) {System.out.println("Macro Div REEEEEE"); return;}
@@ -272,8 +229,8 @@ public class Agent implements AgentInterface
         time_divide+= java_rgamma(DIV_SHAPE,DIV_SCALE,rng);
         updateNextTime();
     }
-
-    private void updateNextTime(){
+*/
+/*    private void updateNextTime(){
         if (time_move < Math.min(time_eat, time_divide)){
             next_event = Event.EventType.MOVE;
             next_time = time_move;
@@ -285,4 +242,5 @@ public class Agent implements AgentInterface
             next_time = time_divide;
         }
     }
+    */
 }

@@ -28,8 +28,9 @@ public class Simulation extends SimulationManager
      * @param numMacrophages number of initial macrophages in the environment
      * @param numBacteria    number of initial bacteria in the environment
      **************************************************************************/
-    public Simulation(int numCells,       int guiCellWidth,
-                      int numMacrophages, int numBacteria, long seed, double maxTime)
+    public Simulation(int numCells,   int guiCellWidth, int numMacrophages,
+                      double macSpeed, int numBacteria, double bacSpeed, 
+                      int bacDivShape, double bacDivScale, long seed, double maxTime)
     {
         // call the SimulationManager constructor, which itself makes sure to
         // construct and store an AgentGUI object for drawing
@@ -41,6 +42,7 @@ public class Simulation extends SimulationManager
         this.maxTime = maxTime;
         macrophageList = new ArrayList<Agent>();
         bacteriaList   = new ArrayList<Agent>();
+        landscape = Cell[numCells][numCells];
 
         // as a simple example, construct the initial macrophages and
         // bacteria and add them "at random" (not really, here) to the
@@ -51,18 +53,19 @@ public class Simulation extends SimulationManager
         while(hs.size() < numMacrophages + numBacteria)
         {
           hs.add(rng.nextInt(numCells*numCells));
-        }
+        } //generate random ints, w/o replacement, from numCells^2
         int id = 0;
         int numCols= numCells;
-        for (int randy : hs)
+        for (int randy : hs) //place macs/bacs in the landscape
+        //according to the linearized order of their random ints
         {
           if(id < numMacrophages){
-            Agent a = new Agent(Agent.AgentType.MACROPHAGE, rng);
-            a.setRowCol(randy/numCols, randy%numCols);
+            Agent a = new Macro(rng);
+            landscape[randy/numCols][randy%numCols].occupy(a);
             macrophageList.add(a);
           } else {
-            Agent a = new Agent(Agent.AgentType.BACTERIUM, rng);
-            a.setRowCol(randy/numCols, randy%numCols);
+            Agent a = new Bact(rng);
+            landscape[randy/numCols][randy%numCols].occupy(a);
             bacteriaList.add(a);
           }
           id++;
