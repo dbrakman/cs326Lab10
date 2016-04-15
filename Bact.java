@@ -49,6 +49,12 @@ public class Bact extends Agent implements AgentInterface
             int dest = rng.nextInt(nobac_coord.size()); //pick one at random
             Point dest_point = nobac_coord.get(dest);
             landscape[dest_point.x][dest_point.y].occupy(this); //move there
+            if( landscape[dest_point.x][dest_point.y].hasMacrophage() )
+            {
+                Macro m = landscape[dest_point.x][dest_point.y].getMacrophage();
+                Event e = new Event(m,cal[0].time,Event.EventType.EAT);
+                m.putEvent(e);
+            }
  		}
         cal[0] = new Event(this,cal[0].time+Agent.exponential(bacSpeed,rng),Event.EventType.MOVE);
         //^^schedule another movement

@@ -1,0 +1,1 @@
+Usage: java Tester <int numCells> <int guiCellWidth> <int numMacrophages> <double macSpeed> <int numBacteria> <double bacSpeed> <int bacDivShape> <double bacDivScale> <double maxTime> <double  guiDelayInSecs> <long seed>

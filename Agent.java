@@ -26,6 +26,10 @@ public abstract class Agent implements AgentInterface
         }
         return e;
     }
+    public void putEvent( Event e )
+    {//Adds event e to this agent's calendar, overwriting the event in it's place
+        cal[e.type.ordinal()] = e;
+    }
 
     protected int row;
     protected int col;
