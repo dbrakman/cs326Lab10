@@ -92,18 +92,18 @@ public class Simulation extends SimulationManager
 
         Event nextEv = new Event(null, Double.MAX_VALUE, Event.EventType.UNDEF);
         for( Agent m : macrophageList ){
-            System.out.printf("Macro at (%d, %d) has ev_type %s at time %f%n",m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
+            System.out.printf("Macro #%d at (%d, %d) has ev_type %s at time %f%n",m.getID(),m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
             if( nextEv.time > m.getNextEv().time )
                 nextEv = m.getNextEv();
             }
             for( Agent b : bacteriaList ){
-                System.out.printf("Bac at (%d,%d) has ev_type %s at time %f%n",b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
+                System.out.printf("Bac #%d at (%d,%d) has ev_type %s at time %f%n",b.getID(),b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
                 if( nextEv.time > b.getNextEv().time )
                     nextEv = b.getNextEv();
             }
             //Now nextEv holds the next thing that's supposed to happen. Does it?
             System.out.printf("Evt Owner Type: %s%n",nextEv.owner.getType().name());
-            System.out.printf("So the next event is a (%d,%d) %s's %s at time %f%n",nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.owner.getType().name(), nextEv.type.name(), nextEv.time);
+            System.out.printf("So the next event is a(n) %s by %s #%d at cell (%d,%d) and time %f%n",nextEv.type.name(),nextEv.owner.getType().name(),nextEv.owner.getID(),nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.time);
             sim_clock = nextEv.time;
 
         while (sim_clock < maxTime){
@@ -117,17 +117,17 @@ public class Simulation extends SimulationManager
             }
             nextEv.time = Double.MAX_VALUE; //reset the nextEv so we don't keep repeating the same event
             for( Agent m : macrophageList ){
-            System.out.printf("Macro at (%d, %d) has ev_type %s at time %f%n",m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
+            System.out.printf("Macro #%d at (%d, %d) has ev_type %s at time %f%n",m.getID(),m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
             if( nextEv.time > m.getNextEv().time )
                 nextEv = m.getNextEv();
             }
             for( Agent b : bacteriaList ){
-                System.out.printf("Bac at (%d,%d) has ev_type %s at time %f%n",b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
+                System.out.printf("Bac #%d at (%d,%d) has ev_type %s at time %f%n",b.getID(),b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
                 if( nextEv.time > b.getNextEv().time )
                     nextEv = b.getNextEv();
             }
             //Now nextEv holds the next thing that's supposed to happen. Does it?
-            System.out.printf("So the next event is a (%d,%d) %s's %s at time %f%n",nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.owner.getType().name(), nextEv.type.name(), nextEv.time);
+            System.out.printf("So the next event is a(n) %s by %s #%d at cell (%d,%d) and time %f%n",nextEv.type.name(),nextEv.owner.getType().name(),nextEv.owner.getID(),nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.time);
             sim_clock = nextEv.time;
 
             gui.update(guiDelay);

@@ -48,7 +48,8 @@ public class Bact extends Agent implements AgentInterface
         if( nobac_coord.size() > 0 ){//if there's spots w/ no bac in our Moore neighborhood
             int dest = rng.nextInt(nobac_coord.size()); //pick one at random
             Point dest_point = nobac_coord.get(dest);
-            landscape[dest_point.x][dest_point.y].occupy(this); //move there
+            landscape[row][col].removeBacterium(); //take this object out of its current spot
+            landscape[dest_point.x][dest_point.y].occupy(this); //put me in the dest spot
             if( landscape[dest_point.x][dest_point.y].hasMacrophage() )
             {
                 Macro m = landscape[dest_point.x][dest_point.y].getMacrophage();

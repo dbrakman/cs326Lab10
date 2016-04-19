@@ -14,7 +14,7 @@ public class Tester
         int bacDivShape    = 2;
         double bacDivScale = 2.0;
         double maxTime     = 20.0;
-        double guiDelayInSecs = .5;
+        double guiDelayInSecs = .1;
 
         if(args.length > 0){ // if they provided command-line args, use those instead
           try{

@@ -1,0 +1,1052 @@
+Randy/numCols = 4, Randy%numCols = 8
+Randy/numCols = 3, Randy%numCols = 5
+Randy/numCols = 5, Randy%numCols = 4
+Randy/numCols = 5, Randy%numCols = 5
+Randy/numCols = 8, Randy%numCols = 8
+Randy/numCols = 7, Randy%numCols = 2
+Randy/numCols = 2, Randy%numCols = 7
+Randy/numCols = 1, Randy%numCols = 1
+Randy/numCols = 1, Randy%numCols = 2
+Randy/numCols = 4, Randy%numCols = 6
+Randy/numCols = 7, Randy%numCols = 9
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 5) has ev_type MOVE at time 0.644097
+Macro #2 at (5, 4) has ev_type MOVE at time 0.516413
+Bac #0 at (5,5) has ev_type MOVE at time 1.685902
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (1,2) has ev_type MOVE at time 0.450970
+Bac #6 at (4,6) has ev_type MOVE at time 0.521230
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+Evt Owner Type: BACTERIUM
+So the next event is a(n) MOVE by BACTERIUM #5 at cell (1,2) and time 0.450970
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 5) has ev_type MOVE at time 0.644097
+Macro #2 at (5, 4) has ev_type MOVE at time 0.516413
+Bac #0 at (5,5) has ev_type MOVE at time 1.685902
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type DIVIDE at time 0.606262
+Bac #6 at (4,6) has ev_type MOVE at time 0.521230
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+So the next event is a(n) MOVE by MACROPHAGE #2 at cell (5,4) and time 0.516413
+AgentGUI: t=0.52, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 5) has ev_type MOVE at time 0.644097
+Macro #2 at (5, 5) has ev_type EAT at time 0.516413
+Bac #0 at (5,5) has ev_type MOVE at time 1.685902
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type DIVIDE at time 0.606262
+Bac #6 at (4,6) has ev_type MOVE at time 0.521230
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+So the next event is a(n) EAT by MACROPHAGE #2 at cell (5,5) and time 0.516413
+AgentGUI: t=0.52, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 5) has ev_type MOVE at time 0.644097
+Macro #2 at (5, 5) has ev_type MOVE at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type DIVIDE at time 0.606262
+Bac #6 at (4,6) has ev_type MOVE at time 0.521230
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+So the next event is a(n) MOVE by BACTERIUM #6 at cell (4,6) and time 0.521230
+AgentGUI: t=0.52, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 5) has ev_type MOVE at time 0.644097
+Macro #2 at (5, 5) has ev_type MOVE at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type DIVIDE at time 0.606262
+Bac #6 at (4,5) has ev_type MOVE at time 0.728578
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+So the next event is a(n) DIVIDE by BACTERIUM #5 at cell (0,2) and time 0.606262
+AgentGUI: t=0.61, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 5) has ev_type MOVE at time 0.644097
+Macro #2 at (5, 5) has ev_type MOVE at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #6 at (4,5) has ev_type MOVE at time 0.728578
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+Bac #8 at (9,2) has ev_type MOVE at time 0.689466
+So the next event is a(n) MOVE by MACROPHAGE #1 at cell (3,5) and time 0.644097
+AgentGUI: t=0.64, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type EAT at time 0.644097
+Macro #2 at (5, 5) has ev_type MOVE at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #6 at (4,5) has ev_type MOVE at time 0.728578
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+Bac #8 at (9,2) has ev_type MOVE at time 0.689466
+So the next event is a(n) EAT by MACROPHAGE #1 at cell (4,6) and time 0.644097
+AgentGUI: t=0.64, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type MOVE at time 0.977628
+Macro #2 at (5, 5) has ev_type MOVE at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,9) has ev_type MOVE at time 0.688358
+Bac #8 at (9,2) has ev_type MOVE at time 0.689466
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (7,9) and time 0.688358
+AgentGUI: t=0.69, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type MOVE at time 0.977628
+Macro #2 at (5, 5) has ev_type MOVE at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (9,2) has ev_type MOVE at time 0.689466
+So the next event is a(n) MOVE by BACTERIUM #8 at cell (9,2) and time 0.689466
+AgentGUI: t=0.69, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type MOVE at time 0.977628
+Macro #2 at (5, 5) has ev_type MOVE at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+So the next event is a(n) MOVE by MACROPHAGE #2 at cell (5,5) and time 0.750457
+AgentGUI: t=0.75, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type MOVE at time 0.977628
+Macro #2 at (4, 5) has ev_type EAT at time 0.750457
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+So the next event is a(n) EAT by MACROPHAGE #2 at cell (4,5) and time 0.750457
+AgentGUI: t=0.75, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type MOVE at time 0.977628
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (2,7) has ev_type MOVE at time 0.866549
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+So the next event is a(n) MOVE by BACTERIUM #3 at cell (2,7) and time 0.866549
+AgentGUI: t=0.87, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type MOVE at time 0.977628
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (7,2) has ev_type MOVE at time 0.907630
+Bac #3 at (1,6) has ev_type MOVE at time 1.648077
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+So the next event is a(n) MOVE by BACTERIUM #2 at cell (7,2) and time 0.907630
+AgentGUI: t=0.91, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 6) has ev_type MOVE at time 0.977628
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (1,6) has ev_type MOVE at time 1.648077
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+So the next event is a(n) MOVE by MACROPHAGE #1 at cell (4,6) and time 0.977628
+AgentGUI: t=0.98, lastUpdateTime = 0
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,8) has ev_type DIVIDE at time 1.123691
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (1,6) has ev_type MOVE at time 1.648077
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+So the next event is a(n) DIVIDE by BACTERIUM #1 at cell (8,8) and time 1.123691
+AgentGUI: t=1.12, lastUpdateTime = 0
+AgentGUI: ololol updating the dialoglog
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,8) has ev_type MOVE at time 1.339966
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (1,6) has ev_type MOVE at time 1.648077
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+So the next event is a(n) MOVE by BACTERIUM #1 at cell (8,8) and time 1.339966
+AgentGUI: t=1.34, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (1,6) has ev_type MOVE at time 1.648077
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type DIVIDE at time 1.430468
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+So the next event is a(n) DIVIDE by BACTERIUM #7 at cell (8,9) and time 1.430468
+AgentGUI: t=1.43, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (1,6) has ev_type MOVE at time 1.648077
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type MOVE at time 1.786090
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (9,9) has ev_type MOVE at time 1.558291
+So the next event is a(n) MOVE by BACTERIUM #10 at cell (9,9) and time 1.558291
+AgentGUI: t=1.56, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (1,6) has ev_type MOVE at time 1.648077
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type MOVE at time 1.786090
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (9,0) has ev_type MOVE at time 1.670587
+So the next event is a(n) MOVE by BACTERIUM #3 at cell (1,6) and time 1.648077
+AgentGUI: t=1.65, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type MOVE at time 1.786090
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (9,0) has ev_type MOVE at time 1.670587
+So the next event is a(n) MOVE by BACTERIUM #10 at cell (9,0) and time 1.670587
+AgentGUI: t=1.67, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,9) has ev_type MOVE at time 1.786090
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (8,9) and time 1.786090
+AgentGUI: t=1.79, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,0) has ev_type MOVE at time 1.816780
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (8,0) and time 1.816780
+AgentGUI: t=1.82, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (9,1) has ev_type MOVE at time 1.983152
+Bac #8 at (8,3) has ev_type DIVIDE at time 1.829974
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+So the next event is a(n) DIVIDE by BACTERIUM #8 at cell (8,3) and time 1.829974
+AgentGUI: t=1.83, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (9,1) has ev_type MOVE at time 1.983152
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (9,3) has ev_type MOVE at time 1.987804
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (9,1) and time 1.983152
+AgentGUI: t=1.98, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,1) has ev_type MOVE at time 2.401162
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (9,3) has ev_type MOVE at time 1.987804
+So the next event is a(n) MOVE by BACTERIUM #11 at cell (9,3) and time 1.987804
+AgentGUI: t=1.99, lastUpdateTime = 1
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (4, 7) has ev_type MOVE at time 2.057270
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,1) has ev_type MOVE at time 2.401162
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by MACROPHAGE #1 at cell (4,7) and time 2.057270
+AgentGUI: t=2.06, lastUpdateTime = 1
+AgentGUI: ololol updating the dialoglog
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (1,1) has ev_type MOVE at time 2.160102
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,1) has ev_type MOVE at time 2.401162
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #4 at cell (1,1) and time 2.160102
+AgentGUI: t=2.16, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,8) has ev_type MOVE at time 2.180065
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,1) has ev_type MOVE at time 2.401162
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #1 at cell (7,8) and time 2.180065
+AgentGUI: t=2.18, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (6,7) has ev_type MOVE at time 2.334524
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,1) has ev_type MOVE at time 2.401162
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #1 at cell (6,7) and time 2.334524
+AgentGUI: t=2.33, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (7,6) has ev_type MOVE at time 2.384545
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,1) has ev_type MOVE at time 2.401162
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #1 at cell (7,6) and time 2.384545
+AgentGUI: t=2.38, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (8,1) has ev_type MOVE at time 2.401162
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (8,1) and time 2.401162
+AgentGUI: t=2.40, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (4, 8) has ev_type MOVE at time 2.432260
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,1) has ev_type MOVE at time 2.584879
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by MACROPHAGE #0 at cell (4,8) and time 2.432260
+AgentGUI: t=2.43, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,1) has ev_type MOVE at time 2.584879
+Bac #8 at (8,3) has ev_type MOVE at time 2.476219
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #8 at cell (8,3) and time 2.476219
+AgentGUI: t=2.48, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,1) has ev_type MOVE at time 2.584879
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (7,1) and time 2.584879
+AgentGUI: t=2.58, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (9,7) has ev_type MOVE at time 2.593194
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) MOVE by BACTERIUM #9 at cell (9,7) and time 2.593194
+AgentGUI: t=2.59, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (9,8) has ev_type MOVE at time 2.697091
+Bac #10 at (0,0) has ev_type DIVIDE at time 2.593436
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+So the next event is a(n) DIVIDE by BACTERIUM #10 at cell (0,0) and time 2.593436
+AgentGUI: t=2.59, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (9,8) has ev_type MOVE at time 2.697091
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #9 at cell (9,8) and time 2.697091
+AgentGUI: t=2.70, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,2) has ev_type MOVE at time 2.707861
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #5 at cell (0,2) and time 2.707861
+AgentGUI: t=2.71, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (3, 7) has ev_type MOVE at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by MACROPHAGE #1 at cell (3,7) and time 2.738355
+AgentGUI: t=2.74, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type EAT at time 2.738355
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #3 at (0,6) has ev_type MOVE at time 3.263183
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) EAT by MACROPHAGE #1 at cell (2,7) and time 2.738355
+AgentGUI: t=2.74, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (4, 5) has ev_type MOVE at time 2.885324
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by MACROPHAGE #2 at cell (4,5) and time 2.885324
+AgentGUI: t=2.89, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (0,4) has ev_type MOVE at time 2.891451
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #11 at cell (0,4) and time 2.891451
+AgentGUI: t=2.89, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (8,6) has ev_type MOVE at time 2.916157
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,3) has ev_type MOVE at time 3.025584
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #1 at cell (8,6) and time 2.916157
+AgentGUI: t=2.92, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (7,5) has ev_type MOVE at time 2.984149
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (7,0) has ev_type MOVE at time 2.965063
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,3) has ev_type MOVE at time 3.025584
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (7,0) and time 2.965063
+AgentGUI: t=2.97, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (7,5) has ev_type MOVE at time 2.984149
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,1) has ev_type MOVE at time 3.070073
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,3) has ev_type MOVE at time 3.025584
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #1 at cell (7,5) and time 2.984149
+AgentGUI: t=2.98, lastUpdateTime = 2
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (6,6) has ev_type MOVE at time 3.074123
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,1) has ev_type MOVE at time 3.070073
+Bac #8 at (8,2) has ev_type MOVE at time 3.016227
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,3) has ev_type MOVE at time 3.025584
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #8 at cell (8,2) and time 3.016227
+AgentGUI: t=3.02, lastUpdateTime = 2
+AgentGUI: ololol updating the dialoglog
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (6,6) has ev_type MOVE at time 3.074123
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,1) has ev_type MOVE at time 3.070073
+Bac #8 at (7,3) has ev_type DIVIDE at time 3.384310
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,3) has ev_type MOVE at time 3.025584
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #11 at cell (1,3) and time 3.025584
+AgentGUI: t=3.03, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (6,6) has ev_type MOVE at time 3.074123
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,1) has ev_type MOVE at time 3.070073
+Bac #8 at (7,3) has ev_type DIVIDE at time 3.384310
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (6,1) and time 3.070073
+AgentGUI: t=3.07, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (6,6) has ev_type MOVE at time 3.074123
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,0) has ev_type MOVE at time 3.352482
+Bac #8 at (7,3) has ev_type DIVIDE at time 3.384310
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #1 at cell (6,6) and time 3.074123
+AgentGUI: t=3.07, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (3, 6) has ev_type MOVE at time 3.185441
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,0) has ev_type MOVE at time 3.352482
+Bac #8 at (7,3) has ev_type DIVIDE at time 3.384310
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by MACROPHAGE #2 at cell (3,6) and time 3.185441
+AgentGUI: t=3.19, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,0) has ev_type MOVE at time 3.352482
+Bac #8 at (7,3) has ev_type DIVIDE at time 3.384310
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (0,0) has ev_type MOVE at time 3.344463
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #10 at cell (0,0) and time 3.344463
+AgentGUI: t=3.34, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,0) has ev_type MOVE at time 3.352482
+Bac #8 at (7,3) has ev_type DIVIDE at time 3.384310
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (6,0) and time 3.352482
+AgentGUI: t=3.35, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (5,9) has ev_type MOVE at time 3.446198
+Bac #8 at (7,3) has ev_type DIVIDE at time 3.384310
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+So the next event is a(n) DIVIDE by BACTERIUM #8 at cell (7,3) and time 3.384310
+AgentGUI: t=3.38, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (5,9) has ev_type MOVE at time 3.446198
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (7,4) has ev_type MOVE at time 3.387486
+So the next event is a(n) MOVE by BACTERIUM #13 at cell (7,4) and time 3.387486
+AgentGUI: t=3.39, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (5,9) has ev_type MOVE at time 3.446198
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,4) has ev_type MOVE at time 3.420748
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+So the next event is a(n) MOVE by BACTERIUM #11 at cell (1,4) and time 3.420748
+AgentGUI: t=3.42, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (5,9) has ev_type MOVE at time 3.446198
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+So the next event is a(n) MOVE by BACTERIUM #7 at cell (5,9) and time 3.446198
+AgentGUI: t=3.45, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type DIVIDE at time 3.515505
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,8) has ev_type MOVE at time 5.927462
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+So the next event is a(n) DIVIDE by BACTERIUM #2 at cell (6,2) and time 3.515505
+AgentGUI: t=3.52, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type MOVE at time 4.271248
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,8) has ev_type MOVE at time 5.927462
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+Bac #14 at (6,3) has ev_type MOVE at time 3.516640
+So the next event is a(n) MOVE by BACTERIUM #14 at cell (6,3) and time 3.516640
+AgentGUI: t=3.52, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 8) has ev_type MOVE at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type MOVE at time 4.271248
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,8) has ev_type MOVE at time 5.927462
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+Bac #14 at (6,4) has ev_type DIVIDE at time 3.643761
+So the next event is a(n) MOVE by MACROPHAGE #0 at cell (5,8) and time 3.528473
+AgentGUI: t=3.53, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 9) has ev_type EAT at time 3.528473
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type MOVE at time 4.271248
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #7 at (6,8) has ev_type MOVE at time 5.927462
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+Bac #14 at (6,4) has ev_type DIVIDE at time 3.643761
+So the next event is a(n) EAT by MACROPHAGE #0 at cell (5,9) and time 3.528473
+AgentGUI: t=3.53, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 9) has ev_type MOVE at time 5.050456
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type MOVE at time 4.271248
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #8 at (7,3) has ev_type MOVE at time 3.567789
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+Bac #14 at (6,4) has ev_type DIVIDE at time 3.643761
+So the next event is a(n) MOVE by BACTERIUM #8 at cell (7,3) and time 3.567789
+AgentGUI: t=3.57, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Macro #0 at (5, 9) has ev_type MOVE at time 5.050456
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type MOVE at time 3.607207
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type MOVE at time 4.271248
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #8 at (8,4) has ev_type MOVE at time 4.897480
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (6,5) has ev_type MOVE at time 3.588830
+Bac #14 at (6,4) has ev_type DIVIDE at time 3.643761
+So the next event is a(n) MOVE by BACTERIUM #13 at cell (6,5) and time 3.588830
+AgentGUI: t=3.59, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next
+Whoops! I moved into a Macrophage and need to be eaten!
+Macro #0 at (5, 9) has ev_type MOVE at time 5.050456
+Macro #1 at (2, 7) has ev_type MOVE at time 3.820548
+Macro #2 at (2, 5) has ev_type EAT at time 3.588830
+Bac #1 at (5,7) has ev_type MOVE at time 4.066832
+Bac #2 at (6,2) has ev_type MOVE at time 4.271248
+Bac #4 at (2,0) has ev_type DIVIDE at time 5.681732
+Bac #5 at (0,3) has ev_type MOVE at time 3.812153
+Bac #8 at (8,4) has ev_type MOVE at time 4.897480
+Bac #9 at (0,8) has ev_type MOVE at time 4.692792
+Bac #10 at (1,0) has ev_type MOVE at time 4.603789
+Bac #11 at (1,5) has ev_type MOVE at time 3.961689
+Bac #12 at (0,1) has ev_type MOVE at time 4.131587
+Bac #13 at (5,5) has ev_type DIVIDE at time 3.684464
+Bac #14 at (6,4) has ev_type DIVIDE at time 3.643761
+So the next event is a(n) EAT by MACROPHAGE #2 at cell (2,5) and time 3.588830
+AgentGUI: t=3.59, lastUpdateTime = 3
+Simulation: I'm updating the GUI!
+Let's see what's next

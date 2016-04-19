@@ -43,12 +43,14 @@ public class Macro extends Agent implements AgentInterface
         if( bac_coord.size() > 0 ){//if there's bacs in our Moore neighborhood
             int dest = rng.nextInt(bac_coord.size()); //pick one at random
             Point dest_point = bac_coord.get(dest);
-            landscape[dest_point.x][dest_point.y].occupy(this); //move there
+            landscape[row][col].removeMacrophage(); //take me out of the current spot
+            landscape[dest_point.x][dest_point.y].occupy(this); //put me in the dest spot
             cal[1] = new Event(this,cal[0].time,Event.EventType.EAT);
         } else if( nomacro_coord.size() > 0){//else if there's a spot w/ no macs
             int dest = rng.nextInt(nomacro_coord.size()); //pick one at random
             Point dest_point = nomacro_coord.get(dest);
-            landscape[dest_point.x][dest_point.y].occupy(this); //move there
+            landscape[row][col].removeMacrophage(); //take me out of the current spot
+            landscape[dest_point.x][dest_point.y].occupy(this); //put me in the dest spot
         }
         cal[0] = new Event(this,cal[0].time+Agent.exponential(macSpeed,rng),Event.EventType.MOVE);
         //^^schedule another movement
