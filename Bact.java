@@ -54,6 +54,7 @@ public class Bact extends Agent implements AgentInterface
                 Macro m = landscape[dest_point.x][dest_point.y].getMacrophage();
                 Event e = new Event(m,cal[0].time,Event.EventType.EAT);
                 m.putEvent(e);
+                System.out.println("Whoops! I moved into a Macrophage and need to be eaten!");
             }
  		}
         cal[0] = new Event(this,cal[0].time+Agent.exponential(bacSpeed,rng),Event.EventType.MOVE);
