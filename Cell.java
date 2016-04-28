@@ -5,7 +5,7 @@ public class Cell
   private int row; //perhaps redundant
   private int col;
   public double resource;
-  private double growth_rate;
+  private double growthRate;
   private double maxResource;
   public double timeLastDepleted;
 
@@ -16,7 +16,7 @@ public class Cell
     this.macrophage = null;
     this.bacterium = null;
     this.resource = res;
-    this.growth_rate = rate;
+    this.growthRate = rate;
     this.maxResource = max;
   }
 
@@ -44,7 +44,7 @@ public class Cell
   public double getResource(){ return resource; }
   public void setResource(double res) { resource = res; }
 
-  public double getRate(){ return growth_rate }
+  public double getRate(){ return growthRate; }
 
   public double getTimeLastDepleted(){ return timeLastDepleted; }
   public void setTimeLastDepleted(double t) { timeLastDepleted = t; }

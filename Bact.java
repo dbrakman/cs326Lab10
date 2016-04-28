@@ -40,15 +40,15 @@ public class Bact extends Agent implements AgentInterface
     {
         //Alright, so we're about to leave our current cell.
         // 1) Pick up the resources g that have grown since we moved in
-        Cell c = landscape[row][col];
-        double t0 = c.getTimeLastDepleted();
+        Cell cl = landscape[row][col];
+        double t0 = cl.getTimeLastDepleted();
         double t1 = cal[0].time;
-        c.setResource( (t1-t0)*c.getRate() ); //calculate resources g
-        consume(c,t1);  //consume resources g
+        cl.setResource( (t1-t0)*cl.getRate() ); //calculate resources g
+        consume(cl,t1);  //consume resources g
         // 2) Reduce internal resources by consumption amt c
         resource = resource - (t1-t0)*consumptionRate;
             //2b) If we should've starved, throw error
-            if(resouce < 0){ throw new RuntimeException("shoulda starved");}
+            if(resource < 0){ throw new RuntimeException("shoulda starved");}
         //number of possible destinations: 8 - neighbors
         ArrayList<Point> nobac_coord = new ArrayList<Point>();
         for(int i=-1; i <= 1; i++)
@@ -78,13 +78,13 @@ public class Bact extends Agent implements AgentInterface
         // Now we've entered a new cell:
             // 1) Pick up its resources
                 // 1b) Update the cell's timeLastDepleted
-        c = landscape[row][col];
-        consume(c,t1);
+        cl = landscape[row][col];
+        consume(cl,t1);
             // 2) Calculate time of next would-be move
-        t2 = t1+Agent.exponential(bacSpeed,rng);
+        double t2 = t1+Agent.exponential(bacSpeed,rng);
             // 3) Calculate cell's resource growth g over that time
         double aPlusR = resource; //we've already added r to a in "consume(c,t1)"
-        double g = (t2-t1)*c.getRate();
+        double g = (t2-t1)*cl.getRate();
             // 4) Calculate internal consumption c over that time
         double amtC = (t2-t1)*consumptionRate;
             // 5) Decide if we need to starve first
@@ -136,13 +136,13 @@ public class Bact extends Agent implements AgentInterface
     {
         resource = resource + c.getResource();  //consume all the resource in a cell
         c.setResource(0);
-        c.setLastDepletedTime(time);
+        c.setTimeLastDepleted(time);
     }
 
     public void starve(Cell[][] landscape, ArrayList<Agent> bacList)
     {
         //remove this bac from the landscape and bacList
         landscape[row][col].removeBacterium();
-        bacList.remove(this)
+        bacList.remove(this);
     }
 }

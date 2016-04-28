@@ -76,10 +76,10 @@ public class Simulation extends SimulationManager
             (landscape[randy/numCols][randy%numCols]).occupy(a);
             macrophageList.add(a);
           } else {
-            //initialize bacs with normally distributed consumptionRate
+            //initialize bacs with normally distributed consumptionRate and 0 resource
             double consumptionRate = Agent.normal(consumptionRateMean, 
                                             consumptionRateSD, rng);
-            Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,consumptionRate, rng);
+            Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,0,consumptionRate, rng);
             landscape[randy/numCols][randy%numCols].occupy(a);
             //OK, maybe I see that the occupy method could've handled this. but eh
             //When a bac is placed in the landscape, it needs to acquire all the
