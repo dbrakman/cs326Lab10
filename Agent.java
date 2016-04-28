@@ -119,6 +119,7 @@ public abstract class Agent implements AgentInterface
     public abstract void move(Cell[][] landscape, Random rng);
     public abstract void eat(Cell[][] landscape, ArrayList<Agent> bacList);
     public abstract void divide(Cell[][] landscape, ArrayList<Agent> bacList, Random rng);
+    public abstract void starve(Cell[][] landscape, ArrayList<Agent> bacList);
 /*
     public void moveMacro(int numCells, ArrayList<Agent> macroList, ArrayList<Agent> bacList,
                      Random rng)

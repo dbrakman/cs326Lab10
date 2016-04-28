@@ -1,14 +1,14 @@
-rename "eat" to "digest"
-add double resource field to Cell.java
-^^just have regular getter/setter methods for this. the "growth over time" effect will be handled by the simulation/bact classes
+	rename "eat" to "digest"
+X	add double resource field to Cell.java
+X	^^just have regular getter/setter methods for this. the "growth over time" effect will be handled by the simulation/bact classes
 
-normal.rvgs
+X	normal.rvgs
 
-Also add field time_last_depleted
-initialize cell resources with resource ~ Normal(mu, sd^2)
-add agent.starve method, but only offer implementation for bacteria. This seems bad, but hey. It's how we decided to implement our next-event calendar, and we're not changing that now.
-Bact.starve(bacList):
-    unoccupy Cell[row][col]
-    remove (this) from bacList
-    garbageCollector should handle the rest
-update move() and divide() methods per handout
+X	Also add field time_last_depleted
+X	initialize cell resources with resource ~ Normal(mu, sd^2)
+X	add agent.starve method, but only offer implementation for bacteria. This seems bad, but hey. It's how we decided to implement our next-event calendar, and we're not changing that now.
+X	Bact.starve(bacList):
+X	    unoccupy Cell[row][col]
+X	    remove (this) from bacList
+	    garbageCollector should handle the rest
+	update move() and divide() methods per handout

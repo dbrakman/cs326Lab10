@@ -3,7 +3,7 @@ public class Event
     public Agent owner;
     public double time;
 
-    public enum EventType { MOVE, EAT, DIVIDE, UNDEF };
+    public enum EventType { MOVE, EAT, DIVIDE, STARVE, UNDEF };
 
     public EventType type;
 
