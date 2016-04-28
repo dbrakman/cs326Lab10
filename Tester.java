@@ -7,12 +7,20 @@ public class Tester
         // construct a simulation object w/ appropriate parameters and then run
         int numCells       = 10;
         int guiCellWidth   = 40;
+        double initResourceMean = 1.0;
+        double initResourceSD = 0.5;
+        double regrowthRateMean = 1.0;
+        double regrowthRateSD = 0.1;
+        double maxResourceMean = 1.0;
+        double maxResourceSD = 0.25;
         int numMacrophages = 3;
         double macSpeed    = 2.0;
         int numBacteria    = 8;
         double bacSpeed    = 1.0;
         int bacDivShape    = 2;
         double bacDivScale = 2.0;
+        double consumptionRateMean = 1.0;
+        double consumptionRateSD = 0.2;
         double maxTime     = 20.0;
         double guiDelayInSecs = .1;
 
@@ -38,8 +46,11 @@ public class Tester
           }
         }
 
-        Simulation s = new Simulation(numCells, guiCellWidth, numMacrophages, macSpeed,
-                numBacteria, bacSpeed, bacDivShape, bacDivScale, SEED, maxTime);
+        Simulation s = new Simulation(numCells, guiCellWidth, initResourceMean,
+            initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean, 
+            maxResourceSD, numMacrophages, macSpeed, numBacteria, bacSpeed,
+            bacDivShape, bacDivScale, consumptionRateMean, consumptionRateSD,
+            SEED, maxTime);
         s.run(guiDelayInSecs);
     }
 }

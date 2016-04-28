@@ -52,6 +52,9 @@ public class Macro extends Agent implements AgentInterface
             landscape[row][col].removeMacrophage(); //take me out of the current spot
             landscape[dest_point.x][dest_point.y].occupy(this); //put me in the dest spot
         }
+        //now I've moved into a cell
+            //1) get all the resource from the cell
+            //
         cal[0] = new Event(this,cal[0].time+Agent.exponential(macSpeed,rng),Event.EventType.MOVE);
         //^^schedule another movement
     }

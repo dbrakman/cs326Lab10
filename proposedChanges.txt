@@ -1,7 +1,10 @@
 rename "eat" to "digest"
 add double resource field to Cell.java
 ^^just have regular getter/setter methods for this. the "growth over time" effect will be handled by the simulation/bact classes
-import normal.rvgs for finding normal RVs in Java
+
+normal.rvgs
+
+Also add field time_last_depleted
 initialize cell resources with resource ~ Normal(mu, sd^2)
 add agent.starve method, but only offer implementation for bacteria. This seems bad, but hey. It's how we decided to implement our next-event calendar, and we're not changing that now.
 Bact.starve(bacList):

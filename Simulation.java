@@ -29,14 +29,17 @@ public class Simulation extends SimulationManager
      * @param numMacrophages number of initial macrophages in the environment
      * @param numBacteria    number of initial bacteria in the environment
      **************************************************************************/
-    public Simulation(int numCells,   int guiCellWidth, int numMacrophages,
-                      double macSpeed, int numBacteria, double bacSpeed, 
-                      int bacDivShape, double bacDivScale, long seed, double maxTime)
+    public Simulation(int numCells,   int guiCellWidth, double initResourceMean,
+            double initResourceSD, double regrowthRateMean, double regrowthRateSD,
+            double maxResourceMean, double maxResourceSD, int numMacrophages,
+            double macSpeed, int numBacteria, double bacSpeed, int bacDivShape, 
+            double bacDivScale, double consumptionRateMean, double consumptionRateSD,
+            long seed, double maxTime)
     {
         // call the SimulationManager constructor, which itself makes sure to
         // construct and store an AgentGUI object for drawing
         super(numCells, guiCellWidth, maxTime);
-
+        rng = new Random(seed);
         sim_clock = 0;
         this.numCells = numCells;
         this.guiCellWidth = guiCellWidth;
@@ -46,15 +49,17 @@ public class Simulation extends SimulationManager
         landscape = new Cell[numCells][numCells]; //now the landscape is init'd, but..
         for(int i=0; i<numCells; i++){
             for(int j=0;j<numCells;j++){
-                landscape[i][j] = new Cell(i,j);
+                //intialize cells with normally distributed resource parameters
+                double res = Agent.normal(initResourceMean, initResourceSD, rng);
+                double rate = Agent.normal(regrowthRateMean, regrowthRateSD, rng);
+                double max = Agent.normal(maxResourceMean, maxResourceSD, rng);
+                landscape[i][j] = new Cell(i,j, res, rate, max);
             }
         }
 
-        // as a simple example, construct the initial macrophages and
-        // bacteria and add them "at random" (not really, here) to the
-        // landscape
+        // construct the initial macrophages and and add them at random to the
+        //  landscape
         int row = 0, col = 0;
-        rng = new Random(seed);
         HashSet<Integer> hs = new HashSet<Integer>();
         while(hs.size() < numMacrophages + numBacteria)
         {
@@ -71,8 +76,14 @@ public class Simulation extends SimulationManager
             (landscape[randy/numCols][randy%numCols]).occupy(a);
             macrophageList.add(a);
           } else {
-            Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,rng);
+            //initialize bacs with normally distributed consumptionRate
+            double consumptionRate = Agent.normal(consumptionRateMean, 
+                                            consumptionRateSD, rng);
+            Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,consumptionRate, rng);
             landscape[randy/numCols][randy%numCols].occupy(a);
+            //OK, maybe I see that the occupy method could've handled this. but eh
+            //When a bac is placed in the landscape, it needs to acquire all the
+            // resources from that cell
             bacteriaList.add(a);
           }
           id++;

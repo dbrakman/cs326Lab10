@@ -4,13 +4,20 @@ public class Cell
   private Bact bacterium;
   private int row; //perhaps redundant
   private int col;
+  public double resource;
+  private double growth_rate;
+  private double maxResource;
+  public double timeLastDepleted;
 
-  public Cell(int row, int col)
+  public Cell(int row, int col, double res, double rate, double max)
   {
     this.row = row;
     this.col = col;
     this.macrophage = null;
     this.bacterium = null;
+    this.resource = res;
+    this.growth_rate = rate;
+    this.maxResource = max;
   }
 
   public void occupy(Agent a){ 
@@ -33,6 +40,15 @@ public class Cell
   public boolean isOccupied() { return(macrophage != null || bacterium  != null); }
   public boolean hasMacrophage() {return(macrophage != null); }
   public boolean hasBacterium() {return(bacterium != null); }
+
+  public double getResource(){ return resource; }
+  public void setResource(double res) { resource = res; }
+
+  public double getRate(){ return growth_rate }
+
+  public double getTimeLastDepleted(){ return timeLastDepleted; }
+  public void setTimeLastDepleted(double t) { timeLastDepleted = t; }
+
 
   public String toString() { return("(" + row + "," + col + ")"); }
 

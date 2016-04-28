@@ -8,9 +8,11 @@ public class Bact extends Agent implements AgentInterface
     private double bacSpeed;
     private int bacDivShape;
     private double bacDivScale;
+    private double resource;
+    private double consumptionRate;
 
     public Bact(double startTime, double bacSpeed, int bacDivShape,
-    			 double bacDivScale, Random rng)
+    			 double bacDivScale, double consumptionRate, Random rng)
     {
         //Construct a Bact at startTime w/ movement speed macSpeed
         type=Agent.AgentType.BACTERIUM;
@@ -25,13 +27,18 @@ public class Bact extends Agent implements AgentInterface
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
     }
 
-    public Bact(double bacSpeed, int bacDivShape, double bacDivScale, Random rng){ 
-    	this(0.0, bacSpeed, bacDivShape, bacDivScale,rng); 
+    public Bact(double bacSpeed, int bacDivShape, double bacDivScale, 
+        double consumptionRate, Random rng){ 
+    	this(0.0, bacSpeed, bacDivShape, bacDivScale, consumptionRate, rng); 
     }
 
     //move
     public void move(Cell[][] landscape, Random rng)
     {
+        //Alright, so we're about to leave our current cell.
+            // 1) Pick up the resources g that have grown since we moved in
+                // 1b) Update the cell's timeLastDepleted
+            // 2) Reduce internal resources by consumption c
         //number of possible destinations: 8 - neighbors
         ArrayList<Point> nobac_coord = new ArrayList<Point>();
         for(int i=-1; i <= 1; i++)
@@ -58,6 +65,13 @@ public class Bact extends Agent implements AgentInterface
                 System.out.println("Whoops! I moved into a Macrophage and need to be eaten!");
             }
  		}
+        // Now we've entered a new cell:
+            // 1) Pick up its resources
+                // 1b) Update the cell's timeLastDepleted
+            // 2) Calculate time of next would-be move
+            // 3) Calculate cell's resource growth g over that time
+            // 4) Calculate internal consumption c over that time
+            // 5) Decide if we need to starve first
         cal[0] = new Event(this,cal[0].time+Agent.exponential(bacSpeed,rng),Event.EventType.MOVE);
         //^^schedule another movement
     }
@@ -87,10 +101,21 @@ public class Bact extends Agent implements AgentInterface
         	int dest = rng.nextInt(nobac_coord.size()); //pick one at random
             Point dest_point = nobac_coord.get(dest);
 
-        	Bact daughter = new Bact(cal[2].time,bacSpeed,bacDivShape,bacDivScale,rng);
+        	Bact daughter = new Bact(cal[2].time,bacSpeed,bacDivShape,bacDivScale,
+                consumptionRate, rng);
             landscape[dest_point.x][dest_point.y].occupy(daughter);
         	bacList.add(daughter);
         }
         cal[2] = new Event(this,cal[2].time+Agent.erlang(bacDivShape,bacDivScale,rng),Event.EventType.DIVIDE);
+    }
+
+    public void consume(Cell c)
+    {
+        //consume all the resource in a cell
+    }
+
+    public void starve(Cell[][] landscape, ArrayList<Agent> bacList)
+    {
+        //remove this bac from the landscape and bacList
     }
 }
