@@ -1,22 +1,23 @@
+
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Random;
-package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 public class Macro extends Agent implements AgentInterface
 {
     private static int IDBASE = 0;
     private double macSpeed;
     
-    public Macro(double startTime, double macSpeed, Random rng)
+    public Macro(double startTime, double macSpeed, double macDivRate, Random rng)
     {
         type = Agent.AgentType.MACROPHAGE;
         //Construct a Macrophage at startTime w/ movement speed macSpeed
         ID = IDBASE++;
         this.macSpeed = macSpeed;
+        this.macDivRate = macDivRate;
         cal[0] = new Event(this,startTime+Agent.exponential(macSpeed,rng),Event.EventType.MOVE);
         cal[1] = new Event(this,Double.MAX_VALUE,Event.EventType.EAT);
-        cal[2] = new Event(this,Double.MAX_VALUE,Event.EventType.DIVIDE);
+        cal[2] = new Event(this,startTime+Agent.exponential(macDivRate,rng),Event.EventType.DIVIDE);
         cal[3] = new Event(this,Double.MAX_VALUE,Event.EventType.STARVE);
         cal[4] = new Event(this,Double.MAX_VALUE,Event.EventType.UNDEF);
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
@@ -71,7 +72,28 @@ public class Macro extends Agent implements AgentInterface
     //Override Agent's divide method, even though Macs can't divide
     public void divide(Cell[][] landscape, ArrayList<Agent> bacList, Random rng)
     {
-        throw new RuntimeException("Macs can't divide yet");
+        ArrayList<Point> nomac_coord = new ArrayList<Point>();
+        for(int i=-1; i <= 1; i++)
+        {   
+            for( int j=-1; j<=1; j++)
+            {
+                if( i==0 && j==0 ){ continue; }//don't consider the current pos
+                int r = (row + i + landscape.length) % landscape.length;
+                int c = (col + j + landscape[0].length) % landscape[0].length;
+                if( !landscape[r][c].hasMacrophage() )
+                    nomac_coord.add(new Point(r,c));
+            }
+        }
+        if( nomac_coord.size() > 0){            
+            int dest = rng.nextInt(nomac_coord.size()); //pick one at random
+            Point dest_point = nomac_coord.get(dest);
+
+            Macro daughter = new Macro(cal[2].time,macSpeed,macDivRate,rng);
+            Cell cl = landscape[dest_point.x][dest_point.y];
+            cl.occupy(daughter);
+            macList.add(daughter);
+        }
+        cal[2] = new Event(this,cal[2].time+Agent.exponential(macDivRate,rng),Event.EventType.DIVIDE);
     }
 
     //Override Agent's starve method, even though Macs can't starve

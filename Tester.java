@@ -1,4 +1,3 @@
-package final;
 
 public class Tester
 {
@@ -17,6 +16,7 @@ public class Tester
         double maxResourceSD = Parameters.MAX_RESOURCE_SD;
         int numMacrophages = 3;
         double macSpeed    = 2.0;
+        double macDivRate  = Parameters.MACRO_INTER_DIVIDE;
         int numBacteria    = 8;
         double bacSpeed    = Parameters.BACT_INTER_MOVE;
         double bacDivRate    = Parameters.BACT_INTER_DIVIDE;
@@ -50,7 +50,7 @@ public class Tester
 */
         Simulation s = new Simulation(numCells, guiCellWidth, initResourceMean,
             initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean, 
-            maxResourceSD, numMacrophages, macSpeed, numBacteria, bacSpeed,
+            maxResourceSD, numMacrophages, macSpeed, macDivRate, numBacteria, bacSpeed,
             bacDivRate, consumptionRateMean, consumptionRateSD,
             SEED, maxTime);
         s.run(guiDelayInSecs);

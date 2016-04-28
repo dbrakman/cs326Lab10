@@ -1,4 +1,3 @@
-package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 public class Parameters {
     protected static double CONSUMPTION_RATE_MEAN   = 1.0; //normal

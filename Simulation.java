@@ -1,8 +1,9 @@
+
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.HashSet;
 
-package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 
 /**
@@ -35,7 +36,7 @@ public class Simulation extends SimulationManager
     public Simulation(int numCells,   int guiCellWidth, double initResourceMean,
             double initResourceSD, double regrowthRateMean, double regrowthRateSD,
             double maxResourceMean, double maxResourceSD, int numMacrophages,
-            double macSpeed, int numBacteria, double bacSpeed,
+            double macSpeed, double macDivRate, int numBacteria, double bacSpeed,
             double bacDivRate, double consumptionRateMean, double consumptionRateSD,
             long seed, double maxTime)
     {
@@ -85,7 +86,7 @@ public class Simulation extends SimulationManager
         {
           //System.out.printf("Randy/numCols = %d, Randy%%numCols = %d%n",randy/numCols,randy%numCols);
           if(id < numMacrophages){
-            Agent a = new Macro(macSpeed,rng);
+            Agent a = new Macro(macSpeed,macDivRate,rng);
             (landscape[randy/numCols][randy%numCols]).occupy(a);
             macrophageList.add(a);
           } else {

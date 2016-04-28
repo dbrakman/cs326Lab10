@@ -4,7 +4,6 @@ import java.awt.*;          // for Graphics, Graphics2D
 import java.awt.geom.*;     // for Rectangle2D
 import java.util.ArrayList; // for ArrayList
 
-package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 //======================================================================
 //* This class provides a simple graphical interface that will display
