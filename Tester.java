@@ -23,7 +23,7 @@ public class Tester
         double consumptionRateSD = 0.2;
         double maxTime     = 20.0;
         double guiDelayInSecs = .1;
-
+/*
         if(args.length > 0){ // if they provided command-line args, use those instead
           try{
             numCells = Integer.parseInt(args[0]);
@@ -45,7 +45,7 @@ public class Tester
             return;
           }
         }
-
+*/
         Simulation s = new Simulation(numCells, guiCellWidth, initResourceMean,
             initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean, 
             maxResourceSD, numMacrophages, macSpeed, numBacteria, bacSpeed,

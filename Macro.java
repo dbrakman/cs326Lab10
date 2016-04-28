@@ -16,7 +16,8 @@ public class Macro extends Agent implements AgentInterface
         cal[0] = new Event(this,startTime+Agent.exponential(macSpeed,rng),Event.EventType.MOVE);
         cal[1] = new Event(this,Double.MAX_VALUE,Event.EventType.EAT);
         cal[2] = new Event(this,Double.MAX_VALUE,Event.EventType.DIVIDE);
-        cal[3] = new Event(this,Double.MAX_VALUE,Event.EventType.UNDEF);
+        cal[3] = new Event(this,Double.MAX_VALUE,Event.EventType.STARVE);
+        cal[4] = new Event(this,Double.MAX_VALUE,Event.EventType.UNDEF);
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
     }
 

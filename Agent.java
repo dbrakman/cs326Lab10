@@ -120,7 +120,28 @@ public abstract class Agent implements AgentInterface
     public abstract void eat(Cell[][] landscape, ArrayList<Agent> bacList);
     public abstract void divide(Cell[][] landscape, ArrayList<Agent> bacList, Random rng);
     public abstract void starve(Cell[][] landscape, ArrayList<Agent> bacList);
-/*
+    public static boolean considerStarving(Bact b, double t0, 
+            Cell[][] landscape, ArrayList<Agent> bacList)
+    {
+        Cell cl = landscape[b.getRow()][b.getCol()];
+        //We still need to check if bacterium is DOA: starving before 1st move
+        // 2) Calculate time of next would-be action
+        double t1 = b.getNextEv().time;
+        // 3) Calculate cell's resource growth g over that time
+        double aPlusR = b.getResource(); //we've already added r to a in "consume()"
+        double g = (t1 - t0) * cl.getRate();
+        // 4) Calculate internal consumption c over that time
+        double amtC = (t1 - t0) * b.getConsumptionRate();
+        // 5) Decide if we need to starve first
+        if (aPlusR + g - amtC <= 0) {
+            //schedule a starve event
+            double tX = ((t1 - t0) / (amtC - g)) * aPlusR + t0;
+            b.putEvent(new Event(b, tX, Event.EventType.STARVE));
+            return true;
+        }
+        return false;
+    }
+    /*
     public void moveMacro(int numCells, ArrayList<Agent> macroList, ArrayList<Agent> bacList,
                      Random rng)
     {

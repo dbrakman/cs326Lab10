@@ -49,10 +49,20 @@ public class Simulation extends SimulationManager
         landscape = new Cell[numCells][numCells]; //now the landscape is init'd, but..
         for(int i=0; i<numCells; i++){
             for(int j=0;j<numCells;j++){
-                //intialize cells with normally distributed resource parameters
-                double res = Agent.normal(initResourceMean, initResourceSD, rng);
-                double rate = Agent.normal(regrowthRateMean, regrowthRateSD, rng);
-                double max = Agent.normal(maxResourceMean, maxResourceSD, rng);
+                //intialize cells with normally distributed resource parameters, but positive?
+                double res = -1;
+                while( res < 0 ){
+                    res = Agent.normal(initResourceMean, initResourceSD, rng); //keep trying I guess
+                }
+                double rate = -1;
+                while( rate < 0){
+                    rate = Agent.normal(regrowthRateMean, regrowthRateSD, rng);
+                }
+                double max = -1;
+                while( max < 0)
+                {
+                    max = Agent.normal(maxResourceMean, maxResourceSD, rng);
+                }
                 landscape[i][j] = new Cell(i,j, res, rate, max);
             }
         }
@@ -70,21 +80,28 @@ public class Simulation extends SimulationManager
         for (int randy : hs) //place macs/bacs in the landscape
         //according to the linearized order of their random ints
         {
-          System.out.printf("Randy/numCols = %d, Randy%%numCols = %d%n",randy/numCols,randy%numCols);
+          //System.out.printf("Randy/numCols = %d, Randy%%numCols = %d%n",randy/numCols,randy%numCols);
           if(id < numMacrophages){
             Agent a = new Macro(macSpeed,rng);
             (landscape[randy/numCols][randy%numCols]).occupy(a);
             macrophageList.add(a);
           } else {
-            //initialize bacs with normally distributed consumptionRate and 0 resource
-            double consumptionRate = Agent.normal(consumptionRateMean, 
-                                            consumptionRateSD, rng);
+            //initialize bacs with normally distributed (positive) consumptionRate and 0 resource
+            double consumptionRate = -1;
+            while( consumptionRate < 0){
+                consumptionRate = Agent.normal(consumptionRateMean, consumptionRateSD, rng);
+            }
             Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,0,consumptionRate, rng);
-            landscape[randy/numCols][randy%numCols].occupy(a);
+            Cell cl = landscape[randy/numCols][randy%numCols];
+            cl.occupy(a);
             //OK, maybe I see that the occupy method could've handled this. but eh
             //When a bac is placed in the landscape, it needs to acquire all the
             // resources from that cell
+            double t0 = sim_clock;
+            ((Bact) a).consume(cl,t0);
             bacteriaList.add(a);
+            //check if bac is DOA
+            Agent.considerStarving((Bact)a,t0,landscape,bacteriaList);
           }
           id++;
         }
@@ -102,13 +119,14 @@ public class Simulation extends SimulationManager
         this.gui = new AgentGUI(this, numCells, guiCellWidth);
 
         Event nextEv = new Event(null, Double.MAX_VALUE, Event.EventType.UNDEF);
+        //System.out.printf("mac list size = %d, bac list size = %d%n",macrophageList.size(),bacteriaList.size());
         for( Agent m : macrophageList ){
-            System.out.printf("Macro #%d at (%d, %d) has ev_type %s at time %f%n",m.getID(),m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
+            System.out.printf("Macro #%d at (%d, %d) %ss at time %f%n",m.getID(),m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
             if( nextEv.time > m.getNextEv().time )
                 nextEv = m.getNextEv();
             }
             for( Agent b : bacteriaList ){
-                System.out.printf("Bac #%d at (%d,%d) has ev_type %s at time %f%n",b.getID(),b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
+                System.out.printf("Bac #%d at (%d,%d) w/ resource lvl %.2f %ss at time %.2f%n",b.getID(),b.getRow(),b.getCol(),((Bact) b).getResource(),b.getNextEv().type.name(),b.getNextEv().time);
                 if( nextEv.time > b.getNextEv().time )
                     nextEv = b.getNextEv();
             }
@@ -123,17 +141,21 @@ public class Simulation extends SimulationManager
                 nextEv.owner.move(landscape, rng);
             } else if(nextEv.type == Event.EventType.EAT){
                 nextEv.owner.eat(landscape, bacteriaList);
-            } else {
+            } else if(nextEv.type == Event.EventType.STARVE){
+                nextEv.owner.starve(landscape, bacteriaList);
+            } else if(nextEv.type == Event.EventType.DIVIDE){
                 nextEv.owner.divide(landscape, bacteriaList, rng);
+            } else {
+                throw new RuntimeException("Undefined Event Type");
             }
             nextEv.time = Double.MAX_VALUE; //reset the nextEv so we don't keep repeating the same event
             for( Agent m : macrophageList ){
-            System.out.printf("Macro #%d at (%d, %d) has ev_type %s at time %f%n",m.getID(),m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
+            System.out.printf("Macro #%d at (%d, %d) %ss at time %.2f%n",m.getID(),m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
             if( nextEv.time > m.getNextEv().time )
                 nextEv = m.getNextEv();
             }
             for( Agent b : bacteriaList ){
-                System.out.printf("Bac #%d at (%d,%d) has ev_type %s at time %f%n",b.getID(),b.getRow(),b.getCol(),b.getNextEv().type.name(),b.getNextEv().time);
+                System.out.printf("Bac #%d at (%d,%d) w/ resource lvl %.2f %ss at time %.2f%n",b.getID(),b.getRow(),b.getCol(),((Bact) b).getResource(),b.getNextEv().type.name(),b.getNextEv().time);
                 if( nextEv.time > b.getNextEv().time )
                     nextEv = b.getNextEv();
             }
