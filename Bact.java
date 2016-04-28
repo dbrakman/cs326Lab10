@@ -2,38 +2,37 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Random;
 
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
+
 public class Bact extends Agent implements AgentInterface
 {
     private static int IDBASE = 0;
     private double bacSpeed;
-    private int bacDivShape;
-    private double bacDivScale;
+    private double bacDivRate;
     private double resource;
     private double consumptionRate;
 
-    public Bact(double startTime, double bacSpeed, int bacDivShape,
-    			 double bacDivScale, double res, double consumptionRate,
+    public Bact(double startTime, double bacSpeed, double bacDivRate, double res, double consumptionRate,
                  Random rng)
     {
         //Construct a Bact at startTime w/ movement speed macSpeed
         type=Agent.AgentType.BACTERIUM;
         ID = IDBASE++;
         this.bacSpeed = bacSpeed;
-        this.bacDivShape = bacDivShape;
-        this.bacDivScale = bacDivScale;
+        this.bacDivRate = bacDivRate;
         this.resource = res;
         this.consumptionRate = consumptionRate;
         cal[0] = new Event(this,startTime+Agent.exponential(bacSpeed, rng),Event.EventType.MOVE);
         cal[1] = new Event(this,Double.MAX_VALUE,Event.EventType.EAT);
-        cal[2] = new Event(this,startTime+Agent.erlang(bacDivShape,bacDivScale, rng),Event.EventType.DIVIDE);
+        cal[2] = new Event(this,startTime+Agent.exponential(bacDivRate, rng),Event.EventType.DIVIDE);
         cal[3] = new Event(this,Double.MAX_VALUE,Event.EventType.STARVE);
         cal[4] = new Event(this,Double.MAX_VALUE,Event.EventType.UNDEF);
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
     }
 
-    public Bact(double bacSpeed, int bacDivShape, double bacDivScale, double res,
+    public Bact(double bacSpeed, double bacDivRate, double res,
         double consumptionRate, Random rng){ 
-    	this(0.0, bacSpeed, bacDivShape, bacDivScale, res, consumptionRate, rng); 
+    	this(0.0, bacSpeed, bacDivRate, res, consumptionRate, rng); 
     }
     
     public double getResource(){return resource;}
@@ -134,7 +133,7 @@ public class Bact extends Agent implements AgentInterface
             int dest = rng.nextInt(nobac_coord.size()); //pick one at random
             Point dest_point = nobac_coord.get(dest);
 
-            Bact daughter = new Bact(cal[2].time,bacSpeed,bacDivShape,bacDivScale,
+            Bact daughter = new Bact(cal[2].time,bacSpeed,bacDivRate,
             resource/2.0, consumptionRate, rng);
             Cell cl = landscape[dest_point.x][dest_point.y];
             cl.occupy(daughter);
@@ -145,7 +144,7 @@ public class Bact extends Agent implements AgentInterface
         }
         resource = resource/2.0; //halve this bact's resources during division
         double t0 = cal[2].time;
-        cal[2] = new Event(this,cal[2].time+Agent.erlang(bacDivShape,bacDivScale,rng),Event.EventType.DIVIDE);
+        cal[2] = new Event(this,cal[2].time+Agent.exponential(bacDivRate,rng),Event.EventType.DIVIDE);
         //now we (parent) might be at risk of starving
         considerStarving(this,t0,landscape,bacList);
     }

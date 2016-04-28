@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.HashSet;
 
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
+
+
 /**
  * This class implements the next-event simulation engine for your agent-based
  * simulation.  You may choose to define other helper classes (e.g., Event,
@@ -32,8 +35,8 @@ public class Simulation extends SimulationManager
     public Simulation(int numCells,   int guiCellWidth, double initResourceMean,
             double initResourceSD, double regrowthRateMean, double regrowthRateSD,
             double maxResourceMean, double maxResourceSD, int numMacrophages,
-            double macSpeed, int numBacteria, double bacSpeed, int bacDivShape, 
-            double bacDivScale, double consumptionRateMean, double consumptionRateSD,
+            double macSpeed, int numBacteria, double bacSpeed,
+            double bacDivRate, double consumptionRateMean, double consumptionRateSD,
             long seed, double maxTime)
     {
         // call the SimulationManager constructor, which itself makes sure to
@@ -91,7 +94,7 @@ public class Simulation extends SimulationManager
             while( consumptionRate < 0){
                 consumptionRate = Agent.normal(consumptionRateMean, consumptionRateSD, rng);
             }
-            Agent a = new Bact(bacSpeed,bacDivShape,bacDivScale,0,consumptionRate, rng);
+            Agent a = new Bact(bacSpeed,bacDivRate,0,consumptionRate, rng);
             Cell cl = landscape[randy/numCols][randy%numCols];
             cl.occupy(a);
             //OK, maybe I see that the occupy method could've handled this. but eh

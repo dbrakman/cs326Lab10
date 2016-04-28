@@ -1,3 +1,6 @@
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
+
+
 import javax.swing.*;       // for all the Swing stuff (JWhatevers)
 
 import java.awt.*;          // for Graphics, Graphics2D

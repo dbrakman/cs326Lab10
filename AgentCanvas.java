@@ -3,6 +3,7 @@ import java.util.*;        // for ArrayList
 import java.awt.*;         // for Graphics, Graphics2D
 import java.awt.event.*;   // for MouseListener
 import java.awt.geom.*;    // for Rectangle2D
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 /**
  * This class implements the agent canvas for our agent-based simulation,

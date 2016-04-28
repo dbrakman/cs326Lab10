@@ -1,6 +1,7 @@
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Random;
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 public class Macro extends Agent implements AgentInterface
 {

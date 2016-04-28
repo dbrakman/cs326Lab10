@@ -2,6 +2,8 @@ import javax.swing.*;  // for all the JWhatevers
 import java.awt.*;     // for BorderLayout
 import java.util.Random;
 
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
+
 /**
  * This class implements the GUI window for our agent-based simulation,
  * specifically drawing the grid and (eventually) drawing the agents

@@ -3,6 +3,8 @@ import javax.swing.event.*;
 import java.awt.event.*;
 import java.awt.*;
 
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
+
 /**
  * This abstract class allows an extending class to easily create a new GUI
  * window with appropriate listeners.  Note that listener methods are

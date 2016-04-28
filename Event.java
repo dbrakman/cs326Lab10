@@ -1,3 +1,6 @@
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
+
+
 public class Event
 {
     public Agent owner;

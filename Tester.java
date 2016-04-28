@@ -1,3 +1,5 @@
+package final;
+
 public class Tester
 {
     public static long SEED = 8675309;
@@ -7,20 +9,20 @@ public class Tester
         // construct a simulation object w/ appropriate parameters and then run
         int numCells       = 10;
         int guiCellWidth   = 40;
-        double initResourceMean = 1.0;
-        double initResourceSD = 0.5;
-        double regrowthRateMean = 1.0;
-        double regrowthRateSD = 0.1;
-        double maxResourceMean = 1.0;
-        double maxResourceSD = 0.25;
+        double initResourceMean = Parameters.INIT_RESOURCE_MEAN;
+        double initResourceSD = Parameters.INIT_RESOURCE_SD;
+        double regrowthRateMean = Parameters.REGROWTH_RATE_MEAN;
+        double regrowthRateSD = Parameters.REGROWTH_RATE_SD;
+        double maxResourceMean = Parameters.MAX_RESOURCE_MEAN;
+        double maxResourceSD = Parameters.MAX_RESOURCE_SD;
         int numMacrophages = 3;
         double macSpeed    = 2.0;
         int numBacteria    = 8;
-        double bacSpeed    = 1.0;
-        int bacDivShape    = 2;
-        double bacDivScale = 2.0;
-        double consumptionRateMean = 1.0;
-        double consumptionRateSD = 0.2;
+        double bacSpeed    = Parameters.BACT_INTER_MOVE;
+        double bacDivRate    = Parameters.BACT_INTER_DIVIDE;
+        //double bacDivScale = 2.0;
+        double consumptionRateMean = Parameters.CONSUMPTION_RATE_MEAN;
+        double consumptionRateSD = Parameters.CONSUMPTION_RATE_SD;
         double maxTime     = 20.0;
         double guiDelayInSecs = .1;
 /*
@@ -49,7 +51,7 @@ public class Tester
         Simulation s = new Simulation(numCells, guiCellWidth, initResourceMean,
             initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean, 
             maxResourceSD, numMacrophages, macSpeed, numBacteria, bacSpeed,
-            bacDivShape, bacDivScale, consumptionRateMean, consumptionRateSD,
+            bacDivRate, consumptionRateMean, consumptionRateSD,
             SEED, maxTime);
         s.run(guiDelayInSecs);
     }

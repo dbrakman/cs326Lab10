@@ -3,6 +3,7 @@
  * must contain.  This interface also contains an enumerated definition, of
  * public access, to the types of agents.
  */
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 public interface AgentInterface
 {

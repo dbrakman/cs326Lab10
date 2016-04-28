@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+package finals; //Kluge; declared in same package as Tester so that Tester can access these fields
 
 /**
  * This abstact class must be extended by a class that implements the next-event
