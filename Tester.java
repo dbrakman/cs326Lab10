@@ -17,6 +17,7 @@ public class Tester {
         int numMacrophages = 3;
         double macSpeed = 2.0;
         double macDivRate = Parameters.MACRO_INTER_DIVIDE;
+        int minBactToDivide = Parameters.MIN_BACT_TO_DIVIDE;
         int numBacteria = 8;
         double bacSpeed = Parameters.BACT_INTER_MOVE;
         double bacDivRate = Parameters.BACT_INTER_DIVIDE;
@@ -50,9 +51,9 @@ public class Tester {
          */
         Simulation s = new Simulation(numCells, guiCellWidth, initResourceMean,
                 initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean,
-                maxResourceSD, numMacrophages, macSpeed, macDivRate, numBacteria, bacSpeed,
-                bacDivRate, consumptionRateMean, consumptionRateSD,
-                SEED, maxTime);
+                maxResourceSD, numMacrophages, macSpeed, macDivRate, minBactToDivide,
+                numBacteria, bacSpeed, bacDivRate, consumptionRateMean,
+                consumptionRateSD,SEED, maxTime);
         s.run(guiDelayInSecs);
     }
 }

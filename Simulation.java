@@ -17,6 +17,7 @@ public class Simulation extends SimulationManager
     private double sim_clock;
     private int numCells;
     private int guiCellWidth;
+    private int minBactToDivide;
     private Random rng;
     private double maxTime;
     private Cell[][] landscape;
@@ -32,8 +33,9 @@ public class Simulation extends SimulationManager
     public Simulation(int numCells,   int guiCellWidth, double initResourceMean,
             double initResourceSD, double regrowthRateMean, double regrowthRateSD,
             double maxResourceMean, double maxResourceSD, int numMacrophages,
-            double macSpeed, double macDivRate, int numBacteria, double bacSpeed,
-            double bacDivRate, double consumptionRateMean, double consumptionRateSD,
+            double macSpeed, double macDivRate, int minBactToDivide, 
+            int numBacteria, double bacSpeed,double bacDivRate, 
+            double consumptionRateMean, double consumptionRateSD,
             long seed, double maxTime)
     {
         // call the SimulationManager constructor, which itself makes sure to
@@ -44,6 +46,7 @@ public class Simulation extends SimulationManager
         this.numCells = numCells;
         this.guiCellWidth = guiCellWidth;
         this.maxTime = maxTime;
+        this.minBactToDivide = minBactToDivide;
         macrophageList = new ArrayList<Agent>();
         bacteriaList   = new ArrayList<Agent>();
         landscape = new Cell[numCells][numCells]; //now the landscape is init'd, but..
@@ -82,7 +85,7 @@ public class Simulation extends SimulationManager
         {
           //System.out.printf("Randy/numCols = %d, Randy%%numCols = %d%n",randy/numCols,randy%numCols);
           if(id < numMacrophages){
-            Agent a = new Macro(macSpeed,macDivRate,rng);
+            Agent a = new Macro(macSpeed,macDivRate,minBactToDivide,rng);
             (landscape[randy/numCols][randy%numCols]).occupy(a);
             macrophageList.add(a);
           } else {
@@ -136,6 +139,7 @@ public class Simulation extends SimulationManager
             sim_clock = nextEv.time;
 
         while (sim_clock < maxTime){
+            checkMacroDivision(sim_clock);
             System.out.println("Let's see what's next");
             if(nextEv.type == Event.EventType.MOVE){
                 nextEv.owner.move(landscape, rng);
@@ -150,7 +154,9 @@ public class Simulation extends SimulationManager
             }
             nextEv.time = Double.MAX_VALUE; //reset the nextEv so we don't keep repeating the same event
             for( Agent m : macrophageList ){
-            System.out.printf("Macro #%d at (%d, %d) %ss at time %.2f%n",m.getID(),m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
+            System.out.printf("Macro%s #%d at (%d, %d) %ss at time %.2f%n",
+                    (((Macro)m).readyToDivide()?"*":""),m.getID(),
+                    m.getRow(),m.getCol(),m.getNextEv().type.name(),m.getNextEv().time);
             if( nextEv.time > m.getNextEv().time )
                 nextEv = m.getNextEv();
             }
@@ -160,11 +166,18 @@ public class Simulation extends SimulationManager
                     nextEv = b.getNextEv();
             }
             //Now nextEv holds the next thing that's supposed to happen. Does it?
-            System.out.printf("So the next event is a(n) %s by %s #%d at cell (%d,%d) and time %f%n",nextEv.type.name(),nextEv.owner.getType().name(),nextEv.owner.getID(),nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.time);
+            System.out.printf("So the next event is a(n) %s by %s%s #%d at cell (%d,%d) and time %f%n",
+                    nextEv.type.name(),nextEv.owner.getType().name(),
+                    (((nextEv.owner.getType()==Agent.AgentType.MACROPHAGE) && (((Macro)nextEv.owner).readyToDivide()))?
+                            "*":""),nextEv.owner.getID(),
+                    nextEv.owner.getRow(),nextEv.owner.getCol(), nextEv.time);
             sim_clock = nextEv.time;
 
             gui.update(guiDelay);
             System.out.println("Simulation: I'm updating the GUI!");
+            if(sim_clock>15){
+                System.out.println("");
+            }
         }
     }
 
@@ -206,5 +219,21 @@ public class Simulation extends SimulationManager
         for (int i = 0; i < macrophageList.size(); i++) returnList.add( (AgentInterface)macrophageList.get(i) );
         for (int i = 0; i < bacteriaList.size(); i++)   returnList.add( (AgentInterface)bacteriaList.get(i) );
         return(returnList);
+    }
+    
+    private void checkMacroDivision(double t)
+    {
+        ArrayList<Macro> dividers = new ArrayList<>();
+        for(Agent m : macrophageList){
+            if(((Macro)m).readyToDivide() && ((Macro)m).isSurrounded(landscape)){
+                dividers.add((Macro)m);
+            }
+        }
+        for(Macro m : dividers){
+            m.putEvent(new Event(m,t,Event.EventType.DIVIDE));
+            m.divide(landscape, bacteriaList, macrophageList, rng);
+            m.putEvent(new Event(m,t+Agent.exponential(m.getDivRate(),rng),
+                    Event.EventType.DIVIDE));
+        }
     }
 }

@@ -33,13 +33,9 @@ public class Bact extends Agent implements AgentInterface {
         this(0.0, bacSpeed, bacDivRate, res, consumptionRate, rng);
     }
 
-    public double getResource() {
-        return resource;
-    }
-
-    public double getConsumptionRate() {
-        return consumptionRate;
-    }
+    public double getResource() {return resource;}
+    public double getConsumptionRate() {return consumptionRate;}
+    public double getDivRate(){return bacDivRate;}
 
     //move
     public void move(Cell[][] landscape, Random rng) {
@@ -76,10 +72,6 @@ public class Bact extends Agent implements AgentInterface {
             landscape[row][col].removeBacterium(); //take this object out of its current spot
             landscape[dest_point.x][dest_point.y].occupy(this); //put me in the dest spot
             if (landscape[dest_point.x][dest_point.y].hasMacrophage()) {
-                /* cancel all of this bac's events, even though they shouldn't be earlier than cal[0].time*/
-                for (int i = 0; i < Event.EventType.values().length; i++) {
-                    cal[i] = new Event(this, Double.MAX_VALUE, Event.EventType.values()[i]);
-                }
                 Macro m = landscape[dest_point.x][dest_point.y].getMacrophage();
                 Event e = new Event(m, cal[0].time, Event.EventType.EAT);
                 m.putEvent(e);
@@ -141,6 +133,10 @@ public class Bact extends Agent implements AgentInterface {
             daughter.consume(cl, t0);
             considerStarving(daughter, t0, landscape, bacList);
             bacList.add(daughter);
+            Macro m = cl.getMacrophage();
+            if(m != null){
+                m.putEvent(new Event(m,cal[2].time,Event.EventType.EAT));
+            }
         }
         resource = resource / 2.0; //halve this bact's resources during division
         double t0 = cal[2].time;

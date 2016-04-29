@@ -37,6 +37,7 @@ public abstract class Agent implements AgentInterface
     protected int col;
     public int getRow() { return(row); }
     public int getCol() { return(col); }
+    public abstract double getDivRate();
     public void setRowCol(int row, int col)
     { //these values must equal the (r,c) position in the landscape
       //stored here for efficient lookup
