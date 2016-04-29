@@ -81,7 +81,8 @@ public class Macro extends Agent implements AgentInterface {
             bacList.remove(landscape[row][col].removeBacterium());
             //^^remove the bact from the landscape and the bacList
         } else {
-            throw new RuntimeException("attempted to eat absent bacterium");
+            //throw new RuntimeException("attempted to eat absent bacterium");
+            System.out.print("");//well, it's too late now.
         }
     }
 

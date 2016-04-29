@@ -6,26 +6,28 @@ public class Tester {
     public static void main(String[] args) throws InterruptedException {
 
         // construct a simulation object w/ appropriate parameters and then run
-        int numCells = 10;
-        int guiCellWidth = 40;
+        int numCells = Parameters.NUM_CELLS;
+        int guiCellWidth = Parameters.GUI_CELL_WIDTH;
         double initResourceMean = Parameters.INIT_RESOURCE_MEAN;
         double initResourceSD = Parameters.INIT_RESOURCE_SD;
         double regrowthRateMean = Parameters.REGROWTH_RATE_MEAN;
         double regrowthRateSD = Parameters.REGROWTH_RATE_SD;
         double maxResourceMean = Parameters.MAX_RESOURCE_MEAN;
         double maxResourceSD = Parameters.MAX_RESOURCE_SD;
-        int numMacrophages = 3;
-        double macSpeed = 2.0;
+        int numMacrophages = Parameters.NUM_MACROPHAGES;
+        double macSpeed = Parameters.MACRO_INTER_MOVE;
         double macDivRate = Parameters.MACRO_INTER_DIVIDE;
         int minBactToDivide = Parameters.MIN_BACT_TO_DIVIDE;
-        int numBacteria = 8;
+        int numBacteria = Parameters.NUM_BACTERIA;
         double bacSpeed = Parameters.BACT_INTER_MOVE;
         double bacDivRate = Parameters.BACT_INTER_DIVIDE;
         //double bacDivScale = 2.0;
         double consumptionRateMean = Parameters.CONSUMPTION_RATE_MEAN;
         double consumptionRateSD = Parameters.CONSUMPTION_RATE_SD;
-        double maxTime = 20.0;
-        double guiDelayInSecs = .1;
+        double maxTime = Parameters.MAX_TIME;
+        double guiDelayInSecs = Parameters.GUI_DELAY_IN_SECS;
+        long seed = Parameters.SEED;
+
         /*
         if(args.length > 0){ // if they provided command-line args, use those instead
           try{
@@ -53,7 +55,7 @@ public class Tester {
                 initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean,
                 maxResourceSD, numMacrophages, macSpeed, macDivRate, minBactToDivide,
                 numBacteria, bacSpeed, bacDivRate, consumptionRateMean,
-                consumptionRateSD,SEED, maxTime);
+                consumptionRateSD,seed, maxTime);
         s.run(guiDelayInSecs);
     }
 }

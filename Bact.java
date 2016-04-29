@@ -50,7 +50,8 @@ public class Bact extends Agent implements AgentInterface {
         resource = resource - (t1 - t0) * consumptionRate;
         //2b) If we should've starved, throw error
         if (resource < 0) {
-            throw new RuntimeException("shoulda starved");
+            //throw new RuntimeException("shoulda starved");
+            cal[3].time = cal[0].time; //well, starve now.
         }
         //number of possible destinations: 8 - neighbors
         ArrayList<Point> nobac_coord = new ArrayList<Point>();
@@ -75,7 +76,7 @@ public class Bact extends Agent implements AgentInterface {
                 Macro m = landscape[dest_point.x][dest_point.y].getMacrophage();
                 Event e = new Event(m, cal[0].time, Event.EventType.EAT);
                 m.putEvent(e);
-                System.out.println("Whoops! I moved into a Macrophage and need to be eaten!");
+          //      System.out.println("Whoops! I moved into a Macrophage and need to be eaten!");
             }
         }
         // Now we've entered a new cell:
@@ -103,7 +104,7 @@ public class Bact extends Agent implements AgentInterface {
 
     //Override Agent's eat method, even though bacts can't eat:
     public void eat(Cell[][] landscape, ArrayList<Agent> bacList) {
-        throw new RuntimeException("Bacs can't eat, dummy!");
+        //throw new RuntimeException("Bacs can't eat, dummy!");
     }
 
     //divide
