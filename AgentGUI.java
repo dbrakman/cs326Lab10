@@ -70,7 +70,6 @@ class AgentGUI extends WindowManager
         {
             this.dialog.updateCounts(simulation.getNumMacrophages(), 
                                      simulation.getNumBacteria());
-            System.out.println("AgentGUI: ololol updating the dialoglog");
             lastUpdateTime++;
         }
     }

@@ -7,6 +7,7 @@ public class Macro extends Agent implements AgentInterface
 {
     private static int IDBASE = 0;
     private double macSpeed;
+    private double macDivRate;
     
     public Macro(double startTime, double macSpeed, double macDivRate, Random rng)
     {
@@ -23,7 +24,7 @@ public class Macro extends Agent implements AgentInterface
         row = col = -1; //should be overwritten as soon as the Mac is placed in the landscape
     }
 
-    public Macro(double macSpeed, Random rng){ this(0.0,macSpeed,rng); }
+    public Macro(double macSpeed, double macDivRate, Random rng){ this(0.0,macSpeed,macDivRate,rng); }
 
     public void move(Cell[][] landscape, Random rng)
     {
@@ -70,7 +71,8 @@ public class Macro extends Agent implements AgentInterface
     }
 
     //Override Agent's divide method, even though Macs can't divide
-    public void divide(Cell[][] landscape, ArrayList<Agent> bacList, Random rng)
+    public void divide(Cell[][] landscape, ArrayList<Agent> bacList, 
+        ArrayList<Agent> macList, Random rng)
     {
         ArrayList<Point> nomac_coord = new ArrayList<Point>();
         for(int i=-1; i <= 1; i++)

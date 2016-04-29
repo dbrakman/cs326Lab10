@@ -1,10 +1,6 @@
-
-
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.HashSet;
-
-
 
 /**
  * This class implements the next-event simulation engine for your agent-based
@@ -148,7 +144,7 @@ public class Simulation extends SimulationManager
             } else if(nextEv.type == Event.EventType.STARVE){
                 nextEv.owner.starve(landscape, bacteriaList);
             } else if(nextEv.type == Event.EventType.DIVIDE){
-                nextEv.owner.divide(landscape, bacteriaList, rng);
+                nextEv.owner.divide(landscape, bacteriaList, macrophageList, rng);
             } else {
                 throw new RuntimeException("Undefined Event Type");
             }

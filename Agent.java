@@ -1,3 +1,4 @@
+
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Random;
@@ -119,7 +120,7 @@ public abstract class Agent implements AgentInterface
 
     public abstract void move(Cell[][] landscape, Random rng);
     public abstract void eat(Cell[][] landscape, ArrayList<Agent> bacList);
-    public abstract void divide(Cell[][] landscape, ArrayList<Agent> bacList, Random rng);
+    public abstract void divide(Cell[][] landscape, ArrayList<Agent> bacList, ArrayList<Agent> macList, Random rng);
     public abstract void starve(Cell[][] landscape, ArrayList<Agent> bacList);
     public static boolean considerStarving(Bact b, double t0, 
             Cell[][] landscape, ArrayList<Agent> bacList)

@@ -1,13 +1,13 @@
 
-public class Tester
-{
+public class Tester {
+
     public static long SEED = 8675309;
-    public static void main(String[] args) throws InterruptedException
-    {
+
+    public static void main(String[] args) throws InterruptedException {
 
         // construct a simulation object w/ appropriate parameters and then run
-        int numCells       = 10;
-        int guiCellWidth   = 40;
+        int numCells = 10;
+        int guiCellWidth = 40;
         double initResourceMean = Parameters.INIT_RESOURCE_MEAN;
         double initResourceSD = Parameters.INIT_RESOURCE_SD;
         double regrowthRateMean = Parameters.REGROWTH_RATE_MEAN;
@@ -15,17 +15,17 @@ public class Tester
         double maxResourceMean = Parameters.MAX_RESOURCE_MEAN;
         double maxResourceSD = Parameters.MAX_RESOURCE_SD;
         int numMacrophages = 3;
-        double macSpeed    = 2.0;
-        double macDivRate  = Parameters.MACRO_INTER_DIVIDE;
-        int numBacteria    = 8;
-        double bacSpeed    = Parameters.BACT_INTER_MOVE;
-        double bacDivRate    = Parameters.BACT_INTER_DIVIDE;
+        double macSpeed = 2.0;
+        double macDivRate = Parameters.MACRO_INTER_DIVIDE;
+        int numBacteria = 8;
+        double bacSpeed = Parameters.BACT_INTER_MOVE;
+        double bacDivRate = Parameters.BACT_INTER_DIVIDE;
         //double bacDivScale = 2.0;
         double consumptionRateMean = Parameters.CONSUMPTION_RATE_MEAN;
         double consumptionRateSD = Parameters.CONSUMPTION_RATE_SD;
-        double maxTime     = 20.0;
+        double maxTime = 20.0;
         double guiDelayInSecs = .1;
-/*
+        /*
         if(args.length > 0){ // if they provided command-line args, use those instead
           try{
             numCells = Integer.parseInt(args[0]);
@@ -47,12 +47,12 @@ public class Tester
             return;
           }
         }
-*/
+         */
         Simulation s = new Simulation(numCells, guiCellWidth, initResourceMean,
-            initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean, 
-            maxResourceSD, numMacrophages, macSpeed, macDivRate, numBacteria, bacSpeed,
-            bacDivRate, consumptionRateMean, consumptionRateSD,
-            SEED, maxTime);
+                initResourceSD, regrowthRateMean, regrowthRateSD, maxResourceMean,
+                maxResourceSD, numMacrophages, macSpeed, macDivRate, numBacteria, bacSpeed,
+                bacDivRate, consumptionRateMean, consumptionRateSD,
+                SEED, maxTime);
         s.run(guiDelayInSecs);
     }
 }
